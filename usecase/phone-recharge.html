@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinoBank</title>
+    <link rel="icon" href="/assets/logo/logo-Photoroom.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/style/usecase/phone-recharge.css">
+    <link rel="stylesheet" href="/assets/style/responsive/usecases.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="all">
+        <div class="after-login">
+            <div class="left">
+                <div class="header">
+                    <div class="bank-name">
+                        <a class="nino">Nino</a>  <a class="bank">Bank</a>
+                    </div>
+                    <div class="find-use-case">
+                        <form action="">
+                            <span><i class="find fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Tìm kiếm chức năng...">
+                        </form>
+                    </div>
+                </div>
+                <div class="mid">
+                    <ul>
+                        <li onclick="location.href='/user.html'">
+                            <i class="icon fa-solid fa-house" ></i>
+                            Trang chủ
+                        </li>
+                        <li onclick="location.href='/usecase/chuyenTien.html'">
+                            <i class="icon fa-solid fa-money-bill-transfer"></i>
+                            Chuyển tiền
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-cart-shopping"></i>
+                            Hóa đơn
+                        </li>
+                        <li onclick="location.href='/usecase/vemaybay.html'">
+                            <i class="icon fa-solid fa-money-bill"></i>
+                            Đặt vé máy bay
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-money-check-dollar"></i>
+                            Dịch vụ thẻ
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-credit-card"></i>
+                            Tín dụng
+                        </li>
+                        <li onclick="location.href='/usecase/motietkiem.html'">
+                            <i class="icon fa-solid fa-piggy-bank"></i>
+                            Tiết kiệm
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-injured"></i>
+                            Bảo hiểm
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-handshake"></i>
+                            Đầu tư
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-landmark"></i>    
+                            Ngân sách nhà nước
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li>
+                            <i class="icon fa-solid fa-phone"></i>
+                            1900 xxx xxx
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-location-dot"></i>
+                            ATM/Chi nhánh
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-tie"></i>
+                            Yêu cầu hỗ trợ
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="background">
+                    <img src="/assets/img/lerone-pieters-vF6mSAWAzzU-unsplash.jpg" alt="">
+                    <div class="first">
+                        <div class="user">
+                            <div class="avt">
+                                <img class="avt-nino" src="/assets/img/Ninobackground.png" alt="">
+                            </div>
+                            <div class="another">
+                                <div class="greeting">
+                                    Chúc Quý khách một ngày tốt lành!
+                                </div>
+                                <div class="fullname">
+                                    <span id="usernameDisplay">Unknown</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addition">
+                            <div class="setting icon-bars" >
+                                <i class="fa-solid fa-bars"></i>
+                                <span>Thanh ngang</span>
+                            </div>
+                            <div class="setting" onclick="location.href='/usecase/notifycation.html'">
+                                <i class="fa-solid fa-bell"></i>
+                                <span>Thông báo</span>
+                            </div>
+                            <div class="setting" onclick="location.href='/usecase/setting.html'">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Cài đặt</span>
+                            </div>
+                            <div class="language">
+                                <img class="language-icon" src=" https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="">
+                                <span>Tiếng Việt</span>
+                            </div>
+                            <div class="log-out" id="logoutButton" onclick="location.href='/index.html'">
+                                <!-- <i class="fa-solid fa-right-from-bracket"></i> -->
+                                <i class="fa-solid fa-power-off"></i>
+                                <span>Đăng xuất</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="phone-recharge">
+                            <div class="recharge_content heading">
+                                <p>Nạp tiền điện thoại</p>
+                                <div class="heading_content">
+                                    <a href="/user.html">Trang chủ</a>
+                                    <i class="fa-solid fa-angle-right setting_icon"></i>
+                                    <a>Nạp tiền</a>
+                                    <i class="fa-solid fa-angle-right setting_icon"></i>
+                                    <a>Nạp tiền điện thoại</a>
+                                </div>
+                            </div>
+                            <div class="recharge_content content_type">
+                                <div class="id_user horizontal">
+                                    <h5 class="test_color-phone-recharge">Tài khoản nguồn</h5>
+                                    <div class="size-right account_number">
+                                        1231234567
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                </div>
+                                <div class="balance_user horizontal">
+                                    <h5 class="test_color-phone-recharge">Số dư</h5>
+                                    <div class="size-right balance_content">
+                                        <h5>63,436,322,000 </h5>
+                                        <h5> vnd</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="text_information">Thông tin giao dịch</h3>
+                            <div class="recharge_content content_body">
+                                <div class="phone_network horizontal">
+                                    <h5 class="test_color-phone-recharge">Nhà mạng</h5>
+                                    <select id="phone_network-name" name="phone_network-name" class="box-size size-right">
+                                        <option value="GTel">GTel</option>
+                                        <option value="Mobifone">Mobifone</option>
+                                        <option value="Viettel">Viettel</option>
+                                        <option value="Vinafone">Vinafone</option>
+                                        <option value="Vinamoblile">Vietnamobile</option>
+                                        <i class="fa-solid fa-angle-down" style="z-index: 11;"></i>
+                                    </select>
+                                </div>
+                                <div class="phone_service horizontal">
+                                    <h5 class="test_color-phone-recharge">Dịch vụ</h5>
+                                    <select id="phone_service-name" name="phone_service-name" class="box-size size-right">
+                                        <option value="name1">Nạp cước dịch vụ di động trả trước</option>
+                                        <option value="name1">Nạp cước dịch vụ di động trả sau</option>
+                                    </select>
+                                </div>
+                                <div class="phone_content horizontal">
+                                    <h5 class="test_color-phone-recharge">Số điện thoại</h5>
+                                    <input type="text" placeholder="Nhập số điện thoại" class="size-right box-size">
+                                </div>
+                                <div class="phone_money horizontal">
+                                    <h5 class="test_color-phone-recharge">Số tiền</h5>
+                                    <div class="phone_money-name size-right">
+                                        <button>10000 VND</button>
+                                        <button>20000 VND</button>
+                                        <button>50000 VND</button>
+                                        <button>100000 VND</button>
+                                        <button>200000 VND</button>
+                                        <button>500000 VND</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recharge_content content_note">
+                                <div class="content_note-heading">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <h4>Lưu ý:</h4>
+                                </div>
+                                <h5>Hỗ trợ tất cả các mạng viễn thông (Viettel, Vinafone, Mobifone, Vietnamobile, <br> G-Mobile, I Telecom)</h5>
+                            </div>
+                            <div class="recharge_content content_control">
+                                <button class="back">Quay lại</button>
+                                <button class="submit">Tiếp tục</button>
+                            </div>
+                        </div>
+                        <div class="last">
+                            <ul>
+                                <li>Điều khoản sử dụng dịch vụ</li>
+                                <li>Biểu phí dịch vụ</li>
+                                <li>Hướng dẫn sử dụng dịch vụ</li>
+                                <li>Hướng dẫn giao dịch an toàn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/user.js" type="module"></script>
+</body>
+</html>

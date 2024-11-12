@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinoBank</title>
+    <link rel="icon" href="/assets/logo/logo-Photoroom.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/style/usecase/vemaybay.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/style/usecase/vemaybay.css">
+</head>
+<body>
+    <div class="all">
+        <div class="after-login">
+            <div class="left">
+                <div class="header">
+                    <div class="bank-name">
+                        <a class="nino">Nino</a>  <a class="bank">Bank</a>
+                    </div>
+                    <div class="find-use-case">
+                        <form action="">
+                            <span><i class="find fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Tìm kiếm chức năng...">
+                        </form>
+                    </div>
+                </div>
+                <div class="mid">
+                    <ul>
+                        <li onclick="location.href='/user.html'">
+                            <i class="icon fa-solid fa-house"></i>
+                            Trang chủ
+                        </li>
+                        <li onclick="location.href='/usecase/chuyenTien.html'">
+                            <i class="icon fa-solid fa-money-bill-transfer"></i>
+                            Chuyển tiền
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-cart-shopping"></i>
+                            Hóa đơn
+                        </li>
+                        <li onclick="location.href='/usecase/vemaybay.html'">
+                            <i class="icon fa-solid fa-money-bill"></i>
+                            Đặt vé máy bay
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-money-check-dollar"></i>
+                            Dịch vụ thẻ
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-credit-card"></i>
+                            Tín dụng
+                        </li>
+                        <li onclick="location.href='/usecase/motietkiem.html'">
+                            <i class="icon fa-solid fa-piggy-bank"></i>
+                            Tiết kiệm
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-injured"></i>
+                            Bảo hiểm
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-handshake"></i>
+                            Đầu tư
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-landmark"></i>    
+                            Ngân sách nhà nước
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li>
+                            <i class="icon fa-solid fa-phone"></i>
+                            1900 xxx xxx
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-location-dot"></i>
+                            ATM/Chi nhánh
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-tie"></i>
+                            Yêu cầu hỗ trợ
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="background">
+                    <img src="/assets/img/lerone-pieters-vF6mSAWAzzU-unsplash.jpg" alt="">
+                    <div class="first">
+                        <div class="user">
+                            <div class="avt">
+                                <img class="avt-nino" src="/assets/img/Ninobackground.png" alt="">
+                            </div>
+                            <div class="another">
+                                <div class="greeting">
+                                    Chúc Quý khách một ngày tốt lành!
+                                </div>
+                                <div class="fullname">
+                                    <span id="usernameDisplay">Unknown</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addition">
+                            <div class="setting" onclick="location.href='/usecase/notifycation.html'">
+                                <i class="fa-solid fa-bell"></i>
+                                Thông báo
+                            </div>
+                            <div class="setting" onclick="location.href='/usecase/setting.html'">
+                                <i class="fa-solid fa-gear"></i>
+                                Cài đặt
+                            </div>
+                            <div class="language">
+                                <img class="language-icon" src=" https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="">
+                                Tiếng Việt
+                            </div>
+                            <div class="log-out" id="logoutButton" onclick="location.href='/index.html'">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Đăng xuất
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="air">
+                            <div class="air-head">
+                                <h4 class="air-header">Đặt vé máy bay nội địa</h4>
+                                <div class="air-header2">
+                                    <div class="air-one">
+                                        Một chiều
+                                    </div>
+                                    <div class="air-two">
+                                        Khứ hồi
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="air-body">
+                                <div class="air-select">
+                                    <div class="air-start">
+                                        <div class="air-start-1"><i class="fa-solid fa-plane-departure"></i></div>
+                                        <div class="air-start-2">
+                                            <div class="air-start-header">Khởi hành</div>
+                                            <div class="air-start-subheader">
+                                                <select name="" id="">
+                                                    <option value="1">Chọn điểm khởi hành</option>
+                                                    <option value="2">Thành phố Hồ Chí Minh</option>
+                                                    <option value="3">Thành phố Đà Nẵng</option>
+                                                    <option value="4">Hà Nội</option>
+                                                    <option value="5">Bình Định</option>
+                                                    <option value="6">Khánh Hòa</option>
+                                                    <option value="7">Phú Quốc</option>
+                                                    <option value="8">Phú Yên</option>
+                                                    <option value="9">Bà Rịa - Vũng Tàu</option>
+                                                    <option value="10">Cần Thơ</option>
+                                                    <option value="11">Đắk Lắk</option>
+                                                    <option value="12">Kiên Giang</option>
+                                                    <option value="13">Hải Phòng</option>
+                                                    <option value="14">Gia Lai</option>
+                                                    <option value="15">Điện Biên</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="air-end">
+                                        <div class="air-end-1"><i class="fa-solid fa-plane-arrival"></i></div>
+                                        <div class="air-end-2">
+                                            <div class="air-end-header">Điểm đến</div>
+                                            <div class="air-end-subheader">
+                                                <select name="" id="">
+                                                    <option value="1">Chọn điểm đến</option>
+                                                    <option value="2">Thành phố Hồ Chí Minh</option>
+                                                    <option value="3">Thành phố Đà Nẵng</option>
+                                                    <option value="4">Hà Nội</option>
+                                                    <option value="5">Bình Định</option>
+                                                    <option value="6">Khánh Hòa</option>
+                                                    <option value="7">Phú Quốc</option>
+                                                    <option value="8">Phú Yên</option>
+                                                    <option value="9">Bà Rịa - Vũng Tàu</option>
+                                                    <option value="10">Cần Thơ</option>
+                                                    <option value="11">Đắk Lắk</option>
+                                                    <option value="12">Kiên Giang</option>
+                                                    <option value="13">Hải Phòng</option>
+                                                    <option value="14">Gia Lai</option>
+                                                    <option value="15">Điện Biên</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="air-date">
+                                        <div class="air-date-1"><i class="fa-regular fa-calendar-days"></i></div>
+                                        <div class="air-date-2">
+                                            <div class="air-date-header">Ngày khởi hành</div>
+                                            <div class="air-date-subheader">
+                                                <select name="" id="">
+                                                    <option value="1">Chọn ngày</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="air-people">
+                                    <div class="air-people-1"><i class="fa-solid fa-user-group"></i></div>
+                                    <div class="air-people-2">
+                                        <div class="air-people-growth">
+                                            <div class="air-people-growth-1">
+                                                Người lớn 
+                                                <p>(12 tuổi trở lên)</p>
+                                            </div>
+                                            <div class="air-people-growth-2">
+                                                <div class="sub">-</div>
+                                                <div class="quantity" style="color: rgb(7, 157, 34)">2</div>
+                                                <div class="add">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="air-people-growth">
+                                            <div class="air-people-growth-1">
+                                                Trẻ em 
+                                                <p>(2 đến dưới 12 tuổi)</p>
+                                            </div>
+                                            <div class="air-people-growth-2">
+                                                <div class="sub">-</div>
+                                                <div class="quantity">0</div>
+                                                <div class="add">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="air-people-growth">
+                                            <div class="air-people-growth-1">
+                                                Em bé
+                                                <p>(Dưới 2 tuổi)</p>
+                                            </div>
+                                            <div class="air-people-growth-2">
+                                                <div class="sub">-</div>
+                                                <div class="quantity">0</div>
+                                                <div class="add">+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="air-favorite">
+                                    <div class="air-favorite-header">
+                                        <p><i class="fa-solid fa-plane"></i></p>
+                                        <div class="air-favorite-title">Hãng hàng không ưa thích</div>
+                                    </div>
+                                    <div class="air-favorite-brand">
+                                        <div class="air-favorite-brandName">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            Vietnam Airlines
+                                        </div>
+                                        <div class="air-favorite-brandSelect">
+                                            <div class="active active-txt air-brand-basic">
+                                                <i class="fa-solid fa-check"></i>
+                                                Phổ thông
+                                            </div>
+                                            <div class="air-brand-super">
+                                                <i class="fa-solid fa-check"></i>
+                                                Thương gia
+                                            </div>
+                                        </div>
+
+                                        <div class="air-favorite-brandName">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            Bamboo Airways
+                                        </div>
+                                        <div class="air-favorite-brandSelect">
+                                            <div class=" air-brand-basic">
+                                                <i class="fa-solid fa-check"></i>
+                                                Phổ thông
+                                            </div>
+                                            <div class="active active-txt air-brand-super">
+                                                <i class="fa-solid fa-check"></i>
+                                                Thương gia
+                                            </div>
+                                        </div>
+
+                                        <div class="air-favorite-brandName">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            Pacific Airlines
+                                        </div>
+                                        <div class="air-favorite-brandSelect">
+                                            <div class="active active-txt air-brand-basic">
+                                                <i class="fa-solid fa-check"></i>
+                                                Phổ thông
+                                            </div>
+                                            <div class="air-brand-super">
+                                                <i class="fa-solid fa-check"></i>
+                                                Thương gia
+                                            </div>
+                                        </div>
+
+                                        <div class="air-favorite-brandName">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            Vietjet Air
+                                        </div>
+                                        <div class="air-favorite-brandSelect">
+                                            <div class="active active-txt air-brand-basic">
+                                                <i class="fa-solid fa-check"></i>
+                                                Phổ thông
+                                            </div>
+                                            <div class="air-brand-super">
+                                                <i class="fa-solid fa-check"></i>
+                                                Thương gia
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="air-find">
+                                Tìm chuyến bay
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last">
+                        <ul>
+                            <li>Điều khoản sử dụng dịch vụ</li>
+                            <li>Biểu phí dịch vụ</li>
+                            <li>Hướng dẫn sử dụng dịch vụ</li>
+                            <li>Hướng dẫn giao dịch an toàn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/js/user.js"></script>
+</body>
+</html>

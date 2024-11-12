@@ -1,0 +1,521 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all
+{
+    width: 100%;
+    /* height: 4000px;  */
+}
+
+.desperate
+{
+    background-color: black;
+    height: 100px;
+}
+
+.nino 
+{
+    color: red;
+}
+
+.bank 
+{
+    color:rgb(35, 122, 180)
+}
+
+/* AFTER LOGIN */
+.after-login
+{
+    background-color: #558184;
+    height: 750px;
+    display: flex;
+}   
+
+.after-login .header
+{
+    border-bottom: 1px solid black;
+    /* background-color: #326789; */
+}
+
+.after-login .left
+{
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, #d3ddc9, #a4d7cf);
+}
+
+.after-login .bank-name
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.after-login .find-use-case
+{
+    padding: 10px 10px 25px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.after-login .find-use-case input
+{
+    padding: 8px 50px 8px 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.after-login .find-use-case .find 
+{
+    position: absolute;
+    left: 30px;
+    bottom: 34px;
+    font-size: 14px;
+}
+
+.after-login .mid
+{
+    width: 100%;
+    height: 480px;
+    overflow: scroll;
+    scrollbar-width: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    background-color: #c5dbca;
+}
+
+.after-login .mid li 
+{
+    list-style: none;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 8px;
+    /* background-color: #78a6c8; */
+}
+
+.after-login .mid li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+ .icon 
+{
+    color:#6d9c9f;
+    margin-right: 5px;
+}
+/* .after-login .footer ul
+{
+    background-color: #78a6c8;
+} */
+.after-login .footer li 
+{
+    margin: 10px 30px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.after-login .footer li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .right
+{
+    position: relative;
+}
+
+.after-login .right .first 
+{
+    width: 100%; 
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.after-login .right .background 
+{
+    position: relative;
+    overflow-x: hidden;
+    
+}
+
+.after-login .right .background img 
+{
+    width: 1240px;
+    height: 750px;
+    object-fit: cover; 
+    display: block; 
+}
+
+.after-login .right .first,  
+.after-login .right .second,
+.after-login .right .last {
+    position: absolute;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    z-index: 1; 
+}
+
+.after-login .right .first {
+    left: 0; 
+    top: 0;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    color:#1b4346
+}
+
+.after-login .right .first .user .avt img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;   
+    border: 1px solid black; 
+    background-color: rgb(176, 208, 229);
+    margin-right: 6px;
+    border-radius: 50px;
+}
+
+.after-login .right .first .language img
+{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;   
+    border: none;
+}
+
+.after-login .right .first .user 
+{
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.after-login .right .first .user .greeting
+{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.after-login .right .first .user .fullname
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.after-login .right .first .addition
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    height: 40px;
+}
+
+.after-login .right .first .addition .setting,
+.after-login .right .first .addition .language,
+.after-login .right .first .addition .log-out
+{
+    padding: 10px 10px;
+}
+
+.after-login .right .first .addition .setting:hover,
+.after-login .right .first .addition .language:hover,
+.after-login .right .first .addition .log-out:hover
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.after-login .right .first .addition img 
+{
+    width: 40px;
+}
+
+.after-login .right .first .language
+{
+    display: flex;
+    align-items: center;
+}
+
+.after-login .right .first .language-icon
+{
+    margin-top: 0px;
+    padding-right: 5px;
+}
+
+.second{
+    top: 180px; 
+    height: 500px;
+    width: 100%;
+    /* background-color: #000 !important; */
+}
+.phone-recharge{
+    /* background-color: #fff; */
+    overflow: scroll;
+    scrollbar-width: none;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 505px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5),
+                0 -1px 2px rgba(255, 255, 255, 0.5),
+                1px 0 2px rgba(255, 255, 255, 0.5),
+                -1px 0 2px rgba(255, 255, 255, 0.5);
+    background-color: rgba(41, 59, 65, 0.2);
+}
+.recharge_content {
+    border: 1px solid #000;
+    color: #2c2b2b;
+    width: 95%;
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: rgb(233, 230, 213);
+}
+.test_color-phone-recharge{
+    color: #7a7777;
+}
+.heading{
+    border: none;
+    background-color: transparent;
+}
+
+.heading_content
+{
+    font-size: 13px;
+    padding-top: 5px;
+}
+.heading >p:first-child{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.heading_content{
+    display: flex;
+    align-items: center;
+    line-height: 14px;
+    margin-top: 8px;
+}
+.heading_content >a:first-child{
+    text-decoration: none;
+    color: #2c2b2b;
+}
+.heading_content >a:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.heading_content i{
+    color: #000;
+    font-size: 14px;
+    margin: 0 5px;
+}
+.recharge_content:nth-child(n + 2){
+    padding: 0px 15px;
+}
+.horizontal{
+    display: flex;
+    justify-content: space-between;
+}
+.size-right{
+    width: 60%;
+    border: 1px solid #000;
+}
+.id_user{
+    align-items: center;
+    margin: 20px 0;
+}
+.id_user div{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.id_user div i{
+   margin-left: 257px;
+   font-size: 13px;
+}
+.balance_user{
+    margin: 20px 0 20px 0;
+}
+.balance_user .balance_content {
+    display: flex;
+    justify-content: right;
+    border: none;
+}
+.balance_user div{
+    display: flex;
+}
+.text_information{
+    color: #000;
+    margin-right: 495px;
+}
+.content_body .phone_network,
+.content_body .phone_service,
+.content_body .phone_content
+{
+    margin: 20px 0;
+    align-items: center;
+}
+.box-size{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.phone_money{
+    margin: 20px 0;
+}
+.phone_money-name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+}
+.phone_money-name button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.phone_money-name button:hover{
+    background-color: #1b4346;
+    color: white;
+}
+.phone_money-name button:nth-child(-n+3){
+    margin-bottom: 20px;
+}
+.content_note{
+    position: relative;
+}
+.content_note::after{
+    content: "";
+    position: absolute;
+    background-color: #1b4346;;
+    left: 0;
+    height: 100%;
+    width: 10px;
+    margin-top: -91px;
+    /* border-left: 1px solid #000; */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.content_note div,
+.content_note h5
+{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+.content_note-heading{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #1b4346;
+    
+}
+.content_note-heading i{
+    margin-right: 5px;
+}
+.content_control{
+    display: flex;
+    justify-content: space-evenly;
+}
+.content_control .back,
+.content_control .submit{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.back{
+    color: #1b4346;
+}
+.submit{
+    color: #1b4346;
+}
+
+.back:hover{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+.submit:hover{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.account_number
+{
+    font-size: 14px;
+}
+
+.account_number:hover
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+.box-size:hover,
+.back:hover,
+.submit:hover,
+.phone_money-name button:hover{
+    cursor: pointer;
+}
+.after-login .right .last {
+    /* bottom: 0; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.after-login .right .last li 
+{
+    display: inline-block;
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #c5dbca;
+    color: black;
+}
+
+.after-login .right .last li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+.icon-bars{
+    display: none;
+    position: absolute;
+}

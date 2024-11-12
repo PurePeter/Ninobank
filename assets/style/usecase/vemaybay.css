@@ -1,0 +1,626 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all
+{
+    width: 100%;
+    /* height: 4000px;  */
+}
+
+.desperate
+{
+    background-color: black;
+    height: 100px;
+}
+
+/* AFTER LOGIN */
+.after-login
+{
+    background-color: #558184;
+    height: 750px;
+    display: flex;
+}  
+
+.nino 
+{
+    color: red;
+}
+
+.bank 
+{
+    color:rgb(35, 122, 180)
+}
+
+.after-login .header
+{
+    border-bottom: 1px solid black;
+    /* background-color: #326789; */
+}
+
+.after-login .left
+{
+    width: 300px;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, #d3ddc9, #a4d7cf);
+}
+
+.after-login .bank-name
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.after-login .find-use-case
+{
+    padding: 10px 10px 25px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.after-login .find-use-case input
+{
+    padding: 8px 50px 8px 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.after-login .find-use-case .find 
+{
+    position: absolute;
+    left: 30px;
+    bottom: 34px;
+    font-size: 14px;
+}
+
+.after-login .mid
+{
+    width: 100%;
+    height: 480px;
+    overflow: scroll;
+    scrollbar-width: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    background-color: #c5dbca;
+}
+
+.after-login .mid li 
+{
+    list-style: none;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 8px;
+    /* background-color: #78a6c8; */
+}
+
+.after-login .mid li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+ .icon 
+{
+    color:#6d9c9f;
+    margin-right: 5px;
+}
+/* .after-login .footer ul
+{
+    background-color: #78a6c8;
+} */
+.after-login .footer li 
+{
+    margin: 10px 30px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.after-login .footer li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .right
+{
+    position: relative;
+}
+
+.after-login .right .first 
+{
+    width: 100%; 
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.after-login .right .background 
+{
+    position: relative;
+}
+
+.after-login .right .background img 
+{
+    width: 1240px;
+    height: 750px;
+    object-fit: cover; 
+    display: block; 
+}
+
+.after-login .right .first, 
+.after-login .right .second, 
+.after-login .right .last {
+    position: absolute;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    z-index: 1; 
+}
+
+.after-login .right .first {
+    left: 0; 
+    top: 0;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    color:#1b4346
+}
+
+.after-login .right .first .user .avt img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;   
+    border: 1px solid black; 
+    background-color: rgb(176, 208, 229);
+    margin-right: 6px;
+    border-radius: 50px;
+}
+
+.after-login .right .first .language img
+{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;   
+    border: none;
+}
+
+.after-login .right .first .user 
+{
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.after-login .right .first .user .greeting
+{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.after-login .right .first .user .fullname
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.after-login .right .first .addition
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    height: 40px;
+}
+
+.after-login .right .first .addition .setting,
+.after-login .right .first .addition .language,
+.after-login .right .first .addition .log-out
+{
+    padding: 10px 10px;
+}
+
+.after-login .right .first .addition .setting:hover,
+.after-login .right .first .addition .language:hover,
+.after-login .right .first .addition .log-out:hover
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.after-login .right .first .addition img 
+{
+    width: 40px;
+}
+
+.after-login .right .first .language
+{
+    display: flex;
+    align-items: center;
+}
+
+.after-login .right .first .language-icon
+{
+    margin-top: 0px;
+    padding-right: 5px;
+}
+
+/*  */
+.after-login .right .second {
+    top: 180px; 
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.air
+{
+    background-color: rgba(41, 59, 65, 0.2);
+    color: black;
+    height: 880px;
+    width: 740px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5),
+                0 -1px 2px rgba(255, 255, 255, 0.5),
+                1px 0 2px rgba(255, 255, 255, 0.5),
+                -1px 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.air-head
+{
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.air-header
+{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.air-header2
+{
+    display: flex;
+}
+
+.air-one
+{
+    padding: 8px 12px;
+    background-color: rgb(29, 122, 122);
+    color: white;
+    border-radius: 6px;
+}
+
+.air-one:hover 
+{
+    cursor: pointer;;
+}
+
+.air-two
+{
+    padding: 8px 12px;
+    background-color: white;
+    color: rgb(29, 122, 122);
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.air-two:hover 
+{
+    cursor: pointer;
+    background-color: rgb(29, 122, 122);
+    color: white;
+}
+
+.air-start
+{
+    display: flex;
+    color: #544f4f;
+    padding: 10px 0;
+    background-color: rgb(233, 230, 213);
+    border-radius: 10px;
+}
+
+.air-start-1
+{
+    padding: 0 10px 10px 10px;
+}
+
+.air-start-header
+{
+    font-size: 14px;
+    color: black;
+}
+
+.air-start-subheader
+{
+    margin-top: 5px;
+}
+
+.air-start-subheader select
+{
+    border: 1px solid #ddd;
+    padding: 5px 480px 5px 5px;
+    border-radius: 10px;
+}
+
+.air-end
+{
+    display: flex;
+    color: #544f4f;
+    padding: 10px 0;
+    background-color: rgb(233, 230, 213);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.air-end-1
+{
+    padding: 0 10px 10px 10px;
+}
+
+.air-end-header
+{
+    font-size: 14px;
+    color: black;
+}
+
+.air-end-subheader
+{
+    margin-top: 5px;
+}
+
+.air-end-subheader select
+{
+    border: 1px solid #ddd;
+    padding: 5px 480px 5px 5px;
+    border-radius: 10px;
+}
+
+.air-date
+{
+    display: flex;
+    color: #544f4f;
+    padding: 10px 0;
+    background-color: rgb(233, 230, 213);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.air-date-1
+{
+    padding: 0 13px 10px 13px;
+}
+
+.air-date-header
+{
+    font-size: 14px;
+    color: black;
+}
+
+.air-date-subheader
+{
+    margin-top: 5px;
+}
+
+.air-date-subheader select
+{
+    border: 1px solid #ddd;
+    padding: 5px 556px 5px 5px;
+    border-radius: 10px;
+}
+
+.air-people
+{
+    display: flex;
+    background-color: rgb(233, 230, 213);
+    border-radius: 10px;
+}
+
+.air-people-1
+{
+    padding: 10px 10px 10px 10px;
+}
+
+.air-people-growth
+{
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.air-people-growth p,
+.air-people-kid p,
+.air-people-baby p
+{
+    font-size: 13px;
+    color: #5d5a5a;
+}
+
+.air-people-growth-1
+{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.air-people-growth-2
+{
+    display: flex;
+    width: 120px;
+    justify-content: space-around;
+}
+
+.air-people-growth-2 .sub,
+.air-people-growth-2 .quantity
+{
+    border-right: 1px solid black;
+    padding-right: 18px;
+}
+
+.air-people-growth-2 .sub:hover,
+.air-people-growth-2 .add:hover
+{
+    cursor: pointer;
+}
+
+.air-favorite
+{
+    background-color: rgb(233, 230, 213);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.air-favorite p
+{
+    padding: 0 10px;
+}
+
+.air-favorite-header
+{
+    display: flex;
+    padding-top: 10px;
+}
+
+.air-favorite-header .air-favorite-title
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.air-favorite-brand
+{
+    padding: 0 0 15px 38px;
+}
+
+.air-favorite-brandName
+{
+    padding: 15px 0 8px 0;
+}
+
+.air-favorite-brandName i 
+{
+    color: rgb(65, 99, 171)
+}
+
+.air-favorite-brandSelect
+{
+    display: flex;
+    color: #aaa;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.active > i
+{
+    color: rgb(65, 99, 171)
+}
+
+.active-txt
+{
+    color: black;
+}
+
+.air-brand-basic
+{
+    border: 1px solid black;
+    padding: 5px 30px 5px 15px;
+    min-width: 120px;
+    background-color: #eee;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.air-brand-basic:hover 
+{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.air-brand-super
+{
+    border: 1px solid black;
+    padding: 5px 30px 5px 15px;
+    min-width: 120px;
+    background-color: #eee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.air-brand-super:hover 
+{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.air-find
+{
+    padding: 10px;
+    background-color: rgb(36, 145, 145);
+    max-width: 350px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.air-find:hover 
+{
+    cursor: pointer;
+    background-color: rgb(114, 204, 201);
+}
+
+/*  */
+
+.after-login .right .last {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.after-login .right .last li 
+{
+    display: inline-block;
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #c5dbca;
+    color: black;
+}
+
+.after-login .right .last li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}

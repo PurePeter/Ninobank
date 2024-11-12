@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinoBank</title>
+    <link rel="icon" href="/assets/logo/logo-Photoroom.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/style/usecase/setting.css">
+    <link rel="stylesheet" href="/assets/style/responsive/usecases.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="all">
+        <div class="after-login">
+            <div class="left">
+                <div class="header">
+                    <div class="bank-name">
+                        <a class="nino">Nino</a>  <a class="bank">Bank</a>
+                    </div>
+                    <div class="find-use-case">
+                        <form action="">
+                            <span><i class="find fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Tìm kiếm chức năng...">
+                        </form>
+                    </div>
+                </div>
+                <div class="mid">
+                    <ul>
+                        <li onclick="location.href='/user.html'">
+                            <i class="icon fa-solid fa-house"></i>
+                            Trang chủ
+                        </li>
+                        <li onclick="location.href='/usecase/chuyenTien.html'">
+                            <i class="icon fa-solid fa-money-bill-transfer"></i>
+                            Chuyển tiền
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-cart-shopping"></i>
+                            Hóa đơn
+                        </li>
+                        <li onclick="location.href='/usecase/vemaybay.html'">
+                            <i class="icon fa-solid fa-money-bill"></i>
+                            Đặt vé máy bay
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-money-check-dollar"></i>
+                            Dịch vụ thẻ
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-credit-card"></i>
+                            Tín dụng
+                        </li>
+                        <li onclick="location.href='/usecase/motietkiem.html'">
+                            <i class="icon fa-solid fa-piggy-bank"></i>
+                            Tiết kiệm
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-injured"></i>
+                            Bảo hiểm
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-handshake"></i>
+                            Đầu tư
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-landmark"></i>    
+                            Ngân sách nhà nước
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li>
+                            <i class="icon fa-solid fa-phone"></i>
+                            1900 xxx xxx
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-location-dot"></i>
+                            ATM/Chi nhánh
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-tie"></i>
+                            Yêu cầu hỗ trợ
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="background">
+                    <img src="/assets/img/lerone-pieters-vF6mSAWAzzU-unsplash.jpg" alt="">
+                    <div class="first">
+                        <div class="user">
+                            <div class="avt">
+                                <img class="avt-nino" src="/assets/img/Ninobackground.png" alt="">
+                            </div>
+                            <div class="another">
+                                <div class="greeting">
+                                    Chúc Quý khách một ngày tốt lành!
+                                </div>
+                                <div class="fullname">
+                                    <span id="usernameDisplay">Unknown</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addition">
+                            <div class="setting icon-bars" >
+                                <i class="fa-solid fa-bars"></i>
+                                <span>Thanh ngang</span>
+                            </div>
+                            <div class="setting" onclick="location.href='/usecase/notifycation.html'">
+                                <i class="fa-solid fa-bell"></i>
+                                <span>Thông báo</span>
+                            </div>
+                            <div class="setting" onclick="location.href='/usecase/setting.html'">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Cài đặt</span>
+                            </div>
+                            <div class="language">
+                                <img class="language-icon" src=" https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="">
+                                <span>Tiếng Việt</span>
+                            </div>
+                            <div class="log-out" id="logoutButton" onclick="location.href='/index.html'">
+                                <!-- <i class="fa-solid fa-right-from-bracket"></i> -->
+                                <i class="fa-solid fa-power-off"></i>
+                                <span>Đăng xuất</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="settings">
+                            <div class="settings_content heading">
+                                <p>Cài đặt</p>
+                                <div class="heading_content">
+                                    <a href="/user.html">Trang chủ</a>
+                                    <i class="fa-solid fa-angle-right setting_icon"></i>
+                                    <a>Cài đặt</a>
+                                </div>
+                            </div>
+                            <div class="settings_content notify">
+                                <i class="fa-solid fa-palette setting_icon"></i>
+                                <p>Giao diện đang chọn: <span>Tiêu chuẩn</span> </p>
+                                <div>Cài đặt giao diện</div>
+                            </div>
+                            <div class="settings_content security">
+                                <p class="content_items">Bảo mật</p>
+                                <div class="setting_items">
+                                    <div class="security-1 items_list">
+                                        <i class="fa-solid fa-key setting_icon"></i>
+                                        <p class="setting_content">Đổi mật khẩu <br> đăng nhập</p>
+                                    </div>
+                                    <div class="security-2 items_list">
+                                        <i class="fa-solid fa-fingerprint setting_icon"></i>
+                                        <p class="setting_content">Cài đặt vân <br>tay</p>
+                                    </div>
+                                    <div class="security-3 items_list">
+                                        <i class="fa-solid fa-clipboard-user setting_icon"></i>
+                                        <p class="setting_content">Tài khoản <br>mặc định</p>
+                                    </div>
+                                    <div class="security-4 items_list">
+                                        <i class="fa-solid fa-comment-sms setting_icon"></i>
+                                        <p class="setting_content">Số điện thoại <br>SMS OTP</p>
+                                    </div>
+                                    <div class="security-5 items_list">
+                                        <i class="fa-solid fa-square-phone setting_icon"></i>
+                                        <p class="setting_content">Cấp mật khẩu <br>Phone Banking</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings_content manage">
+                                <p class="content_items">Quản lý và thiết lập</p>
+                                <div class="setting_items">
+                                    <div class="manage-1 items_list">
+                                        <i class="fa-solid fa-people-arrows setting_icon"></i>
+                                        <p class="setting_content">Quản lý đề <br>nghị thanh toán</p>
+                                    </div>
+                                    <div class="manage-2 items_list">
+                                        <i class="fa-solid fa-bell setting_icon"></i>
+                                        <p class="setting_content">Quản lý thông <br>báo</p>
+                                    </div>
+                                    <div class="manage-3 items_list">
+                                        <i class="fa-solid fa-envelope setting_icon"></i>
+                                        <p class="setting_content">Quản lý <br> email</p>
+                                    </div>
+                                    <div class="manage-4 items_list">
+                                        <i class="fa-regular fa-credit-card setting_icon"></i>
+                                        <p class="setting_content">Quản lý đăng <br>nhập kênh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings_content support">
+                                <p class="content_items">Thông tin hỗ trợ</p>
+                                <div class="setting_items">
+                                    <div class="support-1 items_list">
+                                        <i class="fa-solid fa-up-right-and-down-left-from-center setting_icon"></i>
+                                        <p class="setting_content">Thay đổi cỡ <br>chữ</p>
+                                    </div>
+                                    <div class="support-2 items_list">
+                                        <i class="fa-solid fa-book-open setting_icon"></i>
+                                        <p class="setting_content">Hướng dẫn sử <br>dụng</p>
+                                    </div>
+                                    <div class="support-3 items_list">
+                                        <i class="fa-solid fa-circle-question setting_icon"></i>
+                                        <p class="setting_content">Câu hỏi thường <br>gặp</p>
+                                    </div>
+                                    <div class="support-4 items_list">
+                                        <i class="fa-solid fa-shield-halved setting_icon"></i>
+                                        <p class="setting_content">Giao dịch an <br>toàn</p>
+                                    </div>
+                                    <div class="support-5 items_list">
+                                        <i class="fa-solid fa-arrow-right-arrow-left setting_icon"></i>
+                                        <p class="setting_content">Tỷ giá</p>
+                                    </div>
+                                    <div class="support-6 items_list">
+                                        <i class="fa-solid fa-percent setting_icon"></i>
+                                        <p class="setting_content">Lãi suất</p>
+                                    </div>
+                                    <div class="support-7 items_list">
+                                        <i class="fa-solid fa-calculator setting_icon"></i>
+                                        <p class="setting_content">Tính toán lãi <br>suất</p>
+                                    </div>
+                                    <div class="support-8 items_list">
+                                        <i class="fa-solid fa-ban setting_icon"></i>
+                                        <p class="setting_content">Đóng tài khoản</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="last">
+                            <ul>
+                                <li>Điều khoản sử dụng dịch vụ</li>
+                                <li>Biểu phí dịch vụ</li>
+                                <li>Hướng dẫn sử dụng dịch vụ</li>
+                                <li>Hướng dẫn giao dịch an toàn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/user.js" type="module"></script>
+</body>
+</html>

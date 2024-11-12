@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinoBank</title>
+    <link rel="icon" href="./assets/logo/logo-Photoroom.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/style/user.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/response_user.css">
+</head>
+<body>
+    <div class="all">
+        <div class="after-login">
+            <div class="left">
+                <div class="header">
+                    <div class="bank-name">
+                        <a class="nino">Nino</a> <a class="bank">Digibank</a>
+                    </div>
+                    <div class="find-use-case">
+                        <form action="">
+                            <span><i class="find fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Tìm kiếm chức năng...">
+                        </form>
+                    </div>
+                </div>
+                <div class="mid">
+                    <ul>
+                        <li onclick="location.href='/user.html'">
+                            <i class="icon fa-solid fa-house"></i>
+                            Trang chủ
+                        </li>
+                        <li onclick="location.href='/usecases/chuyenTien.html'">
+                            <i class="icon fa-solid fa-money-bill-transfer"></i>
+                            Chuyển tiền
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-cart-shopping"></i>
+                            Hóa đơn
+                        </li>
+                        <li onclick="location.href='/usecases/vemaybay.html'">
+                            <i class="icon fa-solid fa-money-bill"></i>
+                            Đặt vé máy bay
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-money-check-dollar"></i>
+                            Dịch vụ thẻ
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-credit-card"></i>
+                            Tín dụng
+                        </li>
+                        <li onclick="location.href='/usecases/motietkiem.html'">
+                            <i class="icon fa-solid fa-piggy-bank"></i>
+                            Tiết kiệm
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-injured"></i>
+                            Bảo hiểm
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-handshake"></i>
+                            Đầu tư
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-landmark"></i>    
+                            Ngân sách nhà nước
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li>
+                            <i class="icon fa-solid fa-phone"></i>
+                            1900 xxx xxx
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-location-dot"></i>
+                            ATM/Chi nhánh
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-tie"></i>
+                            Yêu cầu hỗ trợ
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="background">
+                    <img src="./assets/img/lerone-pieters-vF6mSAWAzzU-unsplash.jpg" alt="">
+                    <div class="first">
+                        <!--Dòng chứa các biểu tượng-->
+                        <div class="icon-row">
+                            <div class="icon-hamburger" onclick="toggleFullScreenMenu()">
+                                <i class="fa-solid fa-bars"></i> <!-- Biểu tượng hamburger -->
+                            </div>
+                        </div>
+
+                        <div class="user">
+                            <div class="avt">
+                                <img class="avt-nino" src="./assets/img/Ninobackground.png" alt="">
+                            </div>
+                            <div class="another">
+                                <div class="greeting">
+                                    Chúc Quý khách một ngày tốt lành!
+                                </div>
+                                <div class="fullname">
+                                    <span id="usernameDisplay">Unknown</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addition">
+                            <div class="setting" onclick="window.location.href='/usecase/notifycation.html'">
+                                <i class="fa-solid fa-bell"></i>
+                                <span>Thông báo</span>
+                            </div>
+                            <div class="setting" onclick="window.location.href='/usecase/setting.html'">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Cài đặt</span>
+                            </div>
+                            <div class="language">
+                                <img class="language-icon" src=" https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="">
+                                <span>Tiếng Việt</span>
+                            </div>
+                            <div class="log-out" id="logoutButton" onclick="location.href='/index.html'">
+                                <!-- <i class="fa-solid fa-right-from-bracket"></i> -->
+                                <i class="fa-solid fa-power-off"></i>
+                                <span>Đăng xuất</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="one">
+                            <div class="default-account">
+                                <div class="container-1">
+                                    <div class="infor">
+                                        <div class="infor-header">Tài khoản mặc định</div>
+                                        <div class="number-account balance-container">
+                                            <div class="num">Số tài khoản</div>
+                                            <div class="num-detail">1234567899</div>
+                                        </div>
+                                        <div class="number-mod">
+                                            <div class="num">Số dư</div>
+                                            <div class="mod-detail">
+                                                <span class="balance-amount" id="balance">******</span>
+                                                <!-- Icon Font Awesome để hiện/ẩn số dư -->
+                                                <i class="fas fa-eye-slash eye-icon" id="toggleVisibility" style="cursor: pointer;"></i>
+                                            </div>
+                                            <!-- <div class="vnd">vnd</div>
+                                            <div class="see"><i class="fa-regular fa-eye-slash"></i></div> -->
+                                        </div>
+                                    </div>
+                                    <div class="history">
+                                        <div class="trade">
+                                            <i class="fa-solid fa-clock-rotate-left"></i>
+                                            Lịch sử giao dịch
+                                            <div class="temp"></div>
+                                        </div>
+                                        <div class="card">
+                                            <i class="fa-regular fa-address-card"></i>
+                                            Tài khoản & Thẻ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-2">
+                                    <i class="plus fa-solid fa-plus"></i>
+                                    Mở tài khoản số chọn
+                                </div>
+                            </div>
+                            <div class="favourite">
+                                <div class="favourite-head">
+                                    <div class="favourite-uc">
+                                        Chức năng ưa thích
+                                    </div>
+                                    <div class="favourite-setting">
+                                        Tùy chỉnh
+                                        <i class="fa-solid fa-sliders"></i>
+                                    </div>
+                                </div>
+                                <div class="favourite-body">
+                                    <div class="favourite-left">
+                                        <div class="favourite-body-1">
+                                            <li class="favourite-all transfer-charity">
+                                                <div><i class="fav-icon fa-solid fa-hand-holding-dollar"></i></div>
+                                                Chuyển tiền từ thiện
+                                            </li>
+                                            <li class="favourite-all transfer" onclick="location.href='/usecase/chuyenTien.html'"">
+                                                <div><i class="fav-icon fa-solid fa-money-bill-transfer"></i></div>
+                                                Chuyển tiền trong nước
+                                            </li>
+                                            <li class="favourite-all open-save" onclick="location.href='/usecase/motietkiem.html'">
+                                                <div><i class="fav-icon fa-solid fa-piggy-bank"></i></div>
+                                                Mở tiết kiệm
+                                            </li>
+                                        </div>
+                                        <div class="favourite-body-2">
+                                            <li class="favourite-all setting-money">
+                                                <div><i class="fav-icon fa-solid fa-dollar-sign"></i></div>
+                                                Cài đặt hạn mức     
+                                            </li>
+                                            <li class="favourite-all group-manage">
+                                                <div><i class="fav-icon fa-solid fa-users-line"></i></div>
+                                                Quản lí nhóm
+                                            </li>
+                                            <li class="favourite-all mobile-money" onclick="location.href='/usecase/phone-recharge.html'">
+                                                <div><i class="fav-icon fa-solid fa-mobile-screen"></i></div>
+                                                Nạp tiền điện thoại
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="favourite-right">
+                                        <div class="next">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div class="reward">
+                                <div class="title">
+                                    Nino Rewards
+                                </div>
+                                <div class="ex-point">
+                                    <div class="p">
+                                        <div class="point-title">
+                                            Điểm tích lũy
+                                        </div>
+                                        <div class="point">
+                                            1,100
+                                        </div>
+                                    </div>
+                                    <div class="p-logo">
+                                        <img src="./assets/logo/logocrown.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="exchange-point">
+                                    Đổi điểm ngay
+                                </div>
+                            </div>
+                            <div class="visa">
+                                <div class="visa-card">
+                                    <ul>
+                                        <li class="icon-1">
+                                            <i class="fa-brands fa-cc-paypal"></i>
+                                        </li>
+                                        <li class="icon-2">
+                                            <i class="fa-brands fa-cc-visa"></i>
+                                        </li>
+                                        <li class="icon-3">
+                                            <i class="fa-brands fa-cc-jcb"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="visa-sale">
+                                    <div class="sale-txt">Miễn lãi 90 ngày, hoàn tiền chi tiêu lên đến 13%</div>
+                                    <div class="visa-logo">
+                                        <img src="./assets/logo/logonoslogan.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="visa-more">
+                                    Khám phá ngay
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="explore">
+                                <div class="explore-left">
+                                    <div class="explore-title">Ưu đãi Siêu to khổng lồ dành chủ thẻ Nino Visa</div>
+                                    <div class="explore-sub-title">
+                                        Khám phá ngay 
+                                        <i class="explore-icon fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="explore-right">
+                                    <img src="./assets/img/visabackground.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="full-screen-menu">
+                        <i class="close-icon fa-solid fa-times" onclick="toggleFullScreenMenu()"></i>
+                        <div class="header">
+                            <div class="bank-name">
+                                <a class="nino">Nino</a> <a class="bank">Digibank</a>
+                            </div>
+                            <div class="find-use-case">
+                                <form action="">
+                                    <span><i class="find fa-solid fa-magnifying-glass"></i></span>
+                                    <input type="text" placeholder="Tìm kiếm chức năng...">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="mid">
+                            <ul>
+                                <li>
+                                    <i class="icon fa-solid fa-house"></i>
+                                    Trang chủ
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-money-bill-transfer"></i>
+                                    Chuyển tiền
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-cart-shopping"></i>
+                                    Hóa đơn
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-money-bill"></i>
+                                    Tiền điện
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-money-check-dollar"></i>
+                                    Dịch vụ thẻ
+                                </li>
+                                <li>
+                                    <i class="icon fa-regular fa-credit-card"></i>
+                                    Tín dụng
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-piggy-bank"></i>
+                                    Tiết kiệm
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-user-injured"></i>
+                                    Bảo hiểm
+                                </li>
+                                <li>
+                                    <i class="icon fa-regular fa-handshake"></i>
+                                    Đầu tư
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-landmark"></i>
+                                    Ngân sách nhà nước
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer">
+                            <ul>
+                                <li>
+                                    <i class="icon fa-solid fa-phone"></i>
+                                    1900 xxx xxx
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-location-dot"></i>
+                                    ATM/Chi nhánh
+                                </li>
+                                <li>
+                                    <i class="icon fa-solid fa-user-tie"></i>
+                                    Yêu cầu hỗ trợ
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="last">
+                        <ul>
+                            <li>Điều khoản sử dụng dịch vụ</li>
+                            <li>Biểu phí dịch vụ</li>
+                            <li>Hướng dẫn sử dụng dịch vụ</li>
+                            <li>Hướng dẫn giao dịch an toàn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/user.js" type="module"></script>
+    <!--javascript cho nút menu-->
+    <script>
+        function toggleFullScreenMenu() {
+            const menu = document.querySelector('.full-screen-menu');
+            menu.classList.toggle('show');
+        }
+    
+        // Đóng menu khi nhấn ra ngoài menu hoặc nhấn phím Esc
+        window.addEventListener('click', function(event) {
+            const menu = document.querySelector('.fullscreen-menu');
+            const icon = document.querySelector('.icon-hamburger');
+            if (!menu.contains(event.target) && !icon.contains(event.target)) {
+                menu.classList.remove('show');
+            }
+        });
+    
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.querySelector('.fullscreen-menu').classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all
+{
+    width: 100%;
+    /* height: 4000px;  */
+}
+
+.desperate
+{
+    background-color: black;
+    height: 100px;
+}
+
+/* AFTER LOGIN */
+.after-login
+{
+    background-color: #558184;
+    height: 750px;
+    display: flex;
+}  
+
+.nino 
+{
+    color: red;
+}
+
+.bank 
+{
+    color:rgb(35, 122, 180)
+}
+
+.after-login .header
+{
+    border-bottom: 1px solid black;
+    /* background-color: #326789; */
+}
+
+.after-login .left
+{
+    width: 300px;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, #d3ddc9, #a4d7cf);
+}
+
+.after-login .bank-name
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.after-login .find-use-case
+{
+    padding: 10px 10px 25px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.after-login .find-use-case input
+{
+    padding: 8px 50px 8px 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.after-login .find-use-case .find 
+{
+    position: absolute;
+    left: 30px;
+    bottom: 34px;
+    font-size: 14px;
+}
+
+.after-login .mid
+{
+    width: 100%;
+    height: 480px;
+    overflow: scroll;
+    scrollbar-width: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    background-color: #c5dbca;
+}
+
+.after-login .mid li 
+{
+    list-style: none;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 8px;
+    /* background-color: #78a6c8; */
+}
+
+.after-login .mid li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+ .icon 
+{
+    color:#6d9c9f;
+    margin-right: 5px;
+}
+/* .after-login .footer ul
+{
+    background-color: #78a6c8;
+} */
+.after-login .footer li 
+{
+    margin: 10px 30px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.after-login .footer li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .right
+{
+    position: relative;
+}
+
+.after-login .right .first 
+{
+    width: 100%; 
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.after-login .right .background 
+{
+    position: relative;
+}
+
+.after-login .right .background img 
+{
+    width: 1240px;
+    height: 750px;
+    object-fit: cover; 
+    display: block; 
+}
+
+.after-login .right .first, 
+.after-login .right .second, 
+.after-login .right .last {
+    position: absolute;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    z-index: 1; 
+}
+
+.after-login .right .first {
+    left: 0; 
+    top: 0;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    color:#1b4346
+}
+
+.after-login .right .first .user .avt img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;   
+    border: 1px solid black; 
+    background-color: rgb(176, 208, 229);
+    margin-right: 6px;
+    border-radius: 50px;
+}
+
+.after-login .right .first .language img
+{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;   
+    border: none;
+}
+
+.after-login .right .first .user 
+{
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.after-login .right .first .user .greeting
+{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.after-login .right .first .user .fullname
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.after-login .right .first .addition
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    height: 40px;
+}
+
+.after-login .right .first .addition .setting,
+.after-login .right .first .addition .language,
+.after-login .right .first .addition .log-out
+{
+    padding: 10px 10px;
+}
+
+.after-login .right .first .addition .setting:hover,
+.after-login .right .first .addition .language:hover,
+.after-login .right .first .addition .log-out:hover
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.after-login .right .first .addition img 
+{
+    width: 40px;
+}
+
+.after-login .right .first .language
+{
+    display: flex;
+    align-items: center;
+}
+
+.after-login .right .first .language-icon
+{
+    margin-top: 0px;
+    padding-right: 5px;
+}
+
+/*  */
+.after-login .right .second {
+    top: 180px; 
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.save-money
+{
+    background-color: rgba(41, 59, 65, 0.2);
+    color: black;
+    height: 970px;
+    width: 740px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5),
+                0 -1px 2px rgba(255, 255, 255, 0.5),
+                1px 0 2px rgba(255, 255, 255, 0.5),
+                -1px 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.save-money-head .name 
+{
+    padding-bottom: 10px;
+}
+
+.save-money-head .road
+{
+    padding-bottom: 15px;
+}
+
+.save-money-head li
+{
+    display: inline-block;
+    list-style: none;
+    font-size: 12px;
+    word-spacing: -2px;
+}
+
+.save-money li:hover 
+{
+    color: #dee9ea;
+    cursor: pointer;
+}
+
+.save-money-icon
+{
+    font-size: 10px;
+    padding-left: 2px;
+}
+
+.save-money-body
+{
+    display: flex;
+    background-color: rgb(233, 230, 213);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.save-money-body-2
+{
+    margin-left: 10px;
+}
+
+.save-money-body-head
+{
+    color:rgb(8, 64, 113);
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.save-money-body-subhead
+{
+    font-size: 14px;
+    margin: 0 0 60px 0;
+}
+
+.save-money-body-btn
+{
+    font-size: 15px;
+    color: white;
+    background-color: #194266;
+    max-width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.save-money-body-btn:hover 
+{
+    cursor: pointer;
+    background-color: #2d65a4;
+}
+
+/*  */
+
+.after-login .right .last {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.after-login .right .last li 
+{
+    display: inline-block;
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #c5dbca;
+    color: black;
+}
+
+.after-login .right .last li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}

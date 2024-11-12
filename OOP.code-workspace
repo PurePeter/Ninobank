@@ -1,0 +1,29 @@
+{
+    "folders": [
+        {
+            "name": "PTTKHT",
+            "path": "E:/PTTKHT"
+        },
+        {
+            "name": "CTDLvaGT",
+            "path": "E:/CTDLvaGT"
+        },
+        {
+            "name": "Cplusplus",
+            "path": "E:/Cplusplus"
+        },
+        {
+            "name": "Nino-bank",
+            "path": "."
+        },
+        {
+            "path": "E:/PHTKGT"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Nino-bank",
+        "files.associations": {
+            "iostream": "cpp"
+        }
+    }
+}

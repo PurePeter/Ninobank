@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinoBank</title>
+    <link rel="icon" href="./assets/logo/logo-Photoroom.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/style/index.css">
+    <link rel="stylesheet" href="/assets/style/response_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="all">
+        <div class="before-login">
+            <div class="header">
+                <div class="navbar">
+                    <ul class="sub-navbar">
+                        <li class="active">Cá nhân</li>
+                        <li>Tổ chức</li>
+                        <li>Khách hàng Ưu tiên</li>
+                    </ul>
+                    <ul class="sub-navbar">
+                        <li>Về NINOBANK</li>
+                        <li>Tin tức</li>
+                        <li>Hợp tác</li>
+                        <li class="hire">
+                            Tuyển dụng
+                            <span class="add"></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            1900xxxxxx
+                        </li>
+                        <li class="flag">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Cờ Việt Nam" style="width: 20px; height: 15px;">
+                            <div class="flag-select">
+                                <ul>
+                                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Cờ Việt Nam" style="width: 20px; height: 15px;"></li>
+                                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="Cờ Anh" style="width: 20px; height: 15px;"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+                <!--Menu tasbar-->
+                
+                <!--------------->   
+            </div>
+            <div class="mid">
+                <div class="under-navbar">
+                    <div class="under-navbar-logo">
+                        <img src="./assets/logo/logonoslogan.png" alt="" style="width: 120px; height: 60px;">
+                    </div>
+                    <div class="under-navbar-select">
+                        <ul>
+                            <li>Sản phẩm & Dịch vụ
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li>Công cụ & Tiện ích
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li>Liên hệ & Hỗ trợ
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </li>
+                            <li>Giao dịch an toàn</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="under-navbar-login" onclick="location.href='/login.html'">
+                        <i class="door fa-solid fa-right-to-bracket"></i>
+                        Đăng nhập
+                    </div>
+                    <!--Menu hamburger taskbar-->    
+                    <div class="icon-hamburger" onclick="toggleFullScreenMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    
+                    <!-- Menu toàn màn hình -->
+                    <div class="full-screen-menu">
+                        <i class="close-icon fa-solid fa-times" onclick="toggleFullScreenMenu()"></i>
+                        <div class="menu-header">
+                            <span>Bạn đang truy cập:</span>
+                            <select class="menu-select">
+                                <option>Cá nhân</option>
+                                <option>Tổ chức</option>
+                                <option>Khách hàng Ưu tiên</option>
+                            </select>
+                        </div>
+                        
+                        <ul class="menu-items">
+                            <li>Công cụ & Tiện ích <i class="fa-solid fa-chevron-down"></i></li>
+                            <li>Liên hệ & Hỗ trợ <i class="fa-solid fa-chevron-down"></i></li>
+                            <li>Giao dịch an toàn</li>
+                        </ul>
+                        
+                        <ul class="menu-footer">
+                            <li>Về NINOBANK</li>
+                            <li>Tin tức</li>
+                            <li>Nhà đầu tư</li>
+                            <li>Mạng lưới</li>
+                            <li>Tuyển dụng</li>
+                            <li class="flag-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Flag" style="width: 20px; height: 15px;">
+                                VI
+                            </li>
+                            <li class="contact-number">1900xxxxxx</li>
+                            <li><button class="download-app">Tải NINO Digibank</button></li>
+                        </ul>
+                    </div>                                 
+                    <!-------------------------->
+                </div>
+                <div class="mid-body">
+                    <div class="find">
+                        <div class="greeting">
+                            <div class="icon">
+                                <i class="fa-solid fa-cloud-moon-rain"></i>
+                            </div>
+                            <div class="greeting-text">
+                                <div class="header">Chào buổi tối</div>
+                                <div class="sub-header">Sài Gòn hôm nay mưa</div>
+                            </div>
+                        </div>
+                        <div class="find-taskbar">
+                            <span><i class="glass fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Xin chào, bạn muốn tìm kiếm gì...">
+                        </div>
+                        <div class="txt">
+                            Ngân hàng <a class="nino">NINO</a><a class="bank">BANK</a> là ngân hàng hàng đầu tại Việt Nam, cam kết mang đến trải nghiệm tài chính hiện đại và thuận tiện. Với công nghệ tiên tiến, chúng tôi cung cấp các dịch vụ đa dạng như tài khoản thanh toán, vay vốn, tiết kiệm và đầu tư. Đặc biệt, ứng dụng ngân hàng số của chúng tôi giúp khách hàng dễ dàng quản lý tài chính mọi lúc, mọi nơi. Đội ngũ nhân viên tận tâm và các chương trình ưu đãi hấp dẫn cũng là điểm mạnh thu hút khách hàng đến với <a class="nino">NINO</a><a class="bank">BANK</a>.
+                        </div>
+                        <div class="more">
+                            <a href="">
+                                Khám phá thêm<i class="right fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/chuc20_10-removebg.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="shiba">
+                    <ul>
+                        <li class="customer">
+                            <i class="fa-solid icon-footer fa-headphones"></i>
+                            Chăm sóc khách hàng
+                        </li>
+                        <li class="infor">
+                            <i class="fa-solid icon-footer fa-user-tie"></i>
+                            Thông tin về chúng tôi
+                        </li>
+                        <li class="follow">
+                            Theo dõi chúng tôi trên
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                        <li class="new">
+                            <i class="fa-solid icon-footer fa-square-envelope"></i>
+                            Tin nổi bật
+                        </li>
+                        <li class="contact">
+                            <i class="fa-solid icon-footer fa-phone"></i>
+                            Liên hệ NINO247
+                        </li>
+                        <li class="download">
+                            <i class="fa-solid icon-footer fa-building-columns"></i>
+                            Tải ứng dụng ngân hàng
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <i class="icon-copyright fa-regular fa-copyright"></i>
+                    <div class="text">Bản quyền thuộc về Nino Bank - Sản phẩm của nhóm 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--javascript cho nút menu-->
+    <script>
+        function toggleFullScreenMenu() {
+            const menu = document.querySelector('.full-screen-menu');
+            menu.classList.toggle('show');
+        }
+    
+        // Đóng menu khi nhấn ra ngoài menu hoặc nhấn phím Esc
+        window.addEventListener('click', function(event) {
+            const menu = document.querySelector('.fullscreen-menu');
+            const icon = document.querySelector('.icon-hamburger');
+            if (!menu.contains(event.target) && !icon.contains(event.target)) {
+                menu.classList.remove('show');
+            }
+        });
+    
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.querySelector('.fullscreen-menu').classList.remove('show');
+            }
+        });
+    </script>    
+</body>
+</html>

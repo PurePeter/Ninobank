@@ -1,0 +1,739 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all
+{
+    width: 100%;
+    /* height: 4000px;  */
+    scrollbar-width: none;
+}
+
+.desperate
+{
+    background-color: black;
+    height: 100px;
+}
+
+/* AFTER LOGIN */
+.after-login
+{
+    background-color: #558184;
+    height: 750px;
+    display: flex;
+}  
+
+.nino 
+{
+    color: red;
+}
+
+.bank 
+{
+    color:rgb(35, 122, 180)
+}
+
+.after-login .header
+{
+    border-bottom: 1px solid black;
+    /* background-color: #326789; */
+}
+
+.after-login .left
+{
+    width: 300px;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, #d3ddc9, #a4d7cf);
+}
+
+.after-login .bank-name
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.after-login .find-use-case
+{
+    padding: 10px 10px 25px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.after-login .find-use-case input
+{
+    padding: 8px 50px 8px 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.after-login .find-use-case .find 
+{
+    position: absolute;
+    left: 30px;
+    bottom: 34px;
+    font-size: 14px;
+}
+
+.after-login .mid
+{
+    width: 100%;
+    height: 480px;
+    overflow: scroll;
+    scrollbar-width: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    background-color: #c5dbca;
+}
+
+.after-login .mid li 
+{
+    list-style: none;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 8px;
+    /* background-color: #78a6c8; */
+}
+
+.after-login .mid li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+ .icon 
+{
+    color:#6d9c9f;
+    margin-right: 5px;
+}
+/* .after-login .footer ul
+{
+    background-color: #78a6c8;
+} */
+.after-login .footer li 
+{
+    margin: 10px 30px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.after-login .footer li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .right
+{
+    position: relative;
+}
+
+.after-login .right .first 
+{
+    width: 100%; 
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.after-login .right .background 
+{
+    position: relative;
+}
+
+.after-login .right .background img 
+{
+    width: 1240px;
+    height: 750px;
+    object-fit: cover; 
+    display: block; 
+}
+
+.after-login .right .first, 
+.after-login .right .second, 
+.after-login .right .last {
+    position: absolute;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    z-index: 1; 
+}
+
+.after-login .right .first {
+    left: 0; 
+    top: 0;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    color:#1b4346
+}
+
+.after-login .right .first .user .avt img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;   
+    border: 1px solid black; 
+    background-color: rgb(176, 208, 229);
+    margin-right: 6px;
+    border-radius: 50px;
+}
+
+.after-login .right .first .language img
+{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;   
+    border: none;
+}
+
+.after-login .right .first .user 
+{
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.after-login .right .first .user .greeting
+{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.after-login .right .first .user .fullname
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.after-login .right .first .addition
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    height: 40px;
+    margin-left: 100px;
+}
+
+.after-login .right .first .addition .setting,
+.after-login .right .first .addition .language,
+.after-login .right .first .addition .log-out
+{
+    padding: 10px 10px;
+}
+
+.after-login .right .first .addition .setting:hover,
+.after-login .right .first .addition .language:hover,
+.after-login .right .first .addition .log-out:hover
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.after-login .right .first .addition img 
+{
+    width: 40px;
+}
+
+.after-login .right .first .language
+{
+    display: flex;
+    align-items: center;
+}
+
+.after-login .right .first .language-icon
+{
+    margin-top: 0px;
+    padding-right: 5px;
+}
+
+.after-login .right .second {
+    top: 180px; 
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.after-login .second .one
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.after-login .second .default-account
+{
+    border-radius: 10px;
+    width: 475px;
+    height: 250px;
+    margin-right: 0px;
+    color: rgba(255, 255, 255, 0.9);
+    /* background-image: linear-gradient(to bottom right, #86d1d6, #d7b46e); */
+    background-image: linear-gradient(to bottom right, #86d1d6, #d7b46e);
+
+}
+
+.after-login .second .default-account .container-1 .infor
+{
+    margin-bottom: 20px;
+}
+
+.after-login .second .default-account .container-1
+{
+    background-image: linear-gradient(to bottom right, #54898d, #74c5cb);
+    width: 445px;
+    height: 185px;
+    margin: 15px 15px 6px 15px;
+    border-radius: 10px;
+}
+
+.after-login .second .default-account .container-1 .infor-header
+{
+    font-size: 15px;
+    padding: 10px 0 0 15px;
+    font-weight: 600;
+}
+
+.after-login .second .default-account .container-1 .number-account
+{
+    display: flex;
+    margin-top: 60px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.after-login .second .default-account .container-1 .num-detail
+{
+    margin-left: 20px;
+}
+
+.after-login .second .default-account .container-1 .number-mod
+{
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.after-login .second .default-account .container-1 .mod-detail
+{
+    padding-left: 68px;
+}
+
+.after-login .second .default-account .container-1 .vnd
+{
+    margin: 0 5px;
+    color: #ccc;
+}
+
+.after-login .second .default-account .container-1 .see
+{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.after-login .second .default-account .history
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    word-spacing: -1px;
+    padding: 7px 0;
+    background-color: #318388;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.after-login .second .default-account .history .trade
+{
+    position: relative;
+    cursor: pointer;
+}
+
+.after-login .second .default-account .history .card
+{
+    cursor: pointer;
+}
+
+.after-login .second .default-account .history .temp
+{
+    position: absolute;
+    background-color: #bbb;
+    width: 1px;
+    height: 20px;
+    right: -30px;
+    top: -2px;
+}
+
+.after-login .second .default-account .container-2
+{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 3px 15px 0;
+    width: 446px;
+    border-radius: 10px;
+}
+
+.after-login .second .default-account .container-2:hover 
+{
+    background-color: #27757a;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .second .default-account .container-2 .plus
+{
+    margin: 1px 5px 0 0;
+}
+
+.after-login .second .favourite
+{
+    width: 580px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.after-login .second .favourite-head
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 14px;
+    align-items: center;
+    background-image: linear-gradient(to bottom left, #86d1d6, #cdb890);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 46px;
+    border-bottom: 1px solid rgb(158, 156, 156);
+}
+
+.after-login .second .favourite-head .favourite-uc
+{
+    font-weight: 600;
+}
+
+.after-login .second .favourite .favourite-setting
+{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.after-login .second .favourite .favourite-setting:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white
+}
+
+.after-login .second .favourite-left
+{
+    min-width: 525px;
+}
+
+.after-login .second .favourite-right
+{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color:#4ac1c9;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.after-login .second .favourite-right:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white
+}
+
+.after-login .second .favourite-body
+{
+    height: 212px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to top left, #86d1d6, #d0b889);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.after-login .second .favourite-body-1
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 25px;
+    text-align: center;
+    list-style: none;
+}
+
+.after-login .second .favourite-body-1 li
+{
+    padding: 5px;
+}
+
+.after-login .second .favourite-body-1 li:hover 
+,.after-login .second .favourite-body-2 li:hover
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.favourite-all
+{
+    max-width: 110px;
+}
+
+.fav-icon 
+{
+    padding: 0 40px;
+    font-size: 20px;
+    margin-bottom: 4px;
+    color:#27757a
+}
+
+.after-login .second .favourite-body-2
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: -10px;
+    text-align: center;
+    list-style: none;
+}
+
+.after-login .second .favourite-body-2 li
+{
+    padding: 5px;
+}
+
+.after-login .second .two
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 37px;
+}
+
+.after-login .second .reward
+{
+    height: 220px;
+    width: 250px;
+    background-color: white;
+    margin: 20px 0px 0 0;
+    border-radius: 10px;
+    color: black;
+    background-image: linear-gradient(to bottom right, #86d1d6, #d0b889);
+}
+
+.after-login .second .reward .title
+{
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.after-login .second .reward .ex-point
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100px;
+}
+
+.after-login .second .reward .point-title
+{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.after-login .second .reward .p
+{
+    padding: 40px 20px 30px;
+}
+
+.after-login .second .reward .p-logo img 
+{
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.after-login .second .reward .exchange-point
+{
+    margin: 5px 20px;
+    padding: 10px 0px 10px 12px;
+    border: 1px solid black;
+    width: 145px;
+    border-radius: 10px;
+}
+
+.after-login .second .reward .exchange-point:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .second .visa
+{
+    height: 220px;
+    width: 340px;
+    background-image: linear-gradient(to bottom right, #a6dde1, #c7a767);
+    margin: 20px 0px 0 0;
+    border-radius: 10px;
+    color: black;
+}
+
+.after-login .second .visa-card
+{
+    padding: 10px 20px;
+}
+
+.after-login .second .visa-card li
+{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+    color: rgb(217, 88, 65)
+}
+
+.after-login .second .visa-sale
+{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.after-login .second .visa-sale .sale-txt
+{
+    max-width: 150px;
+}
+
+.after-login .second .visa-more
+{
+    padding: 10px 20px;
+    border: 1px solid black;
+    width: 190px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.after-login .second .visa-logo img
+{
+    width: 100px;
+    height: 60px;
+}
+
+.after-login .second .visa-more:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .second .explore
+{
+    height: 220px;
+    width: 500px;
+    background-image: linear-gradient(to bottom right, #a6dde1, #c7a767);
+    margin: 20px 10px 0 0;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.after-login .second .explore-left
+{
+    width: 180px;
+}
+
+.after-login .second .explore-left .explore-title
+{
+    font-size: 14px;
+    margin: 30px 20px 70px;
+}
+
+.after-login .second .explore-left .explore-sub-title
+{
+    padding: 10px 10px;
+    border: 1px solid black;
+    margin: 0 0 0 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.after-login .second .explore-left .explore-icon
+{
+    font-size: 14px;
+}
+
+.after-login .second .explore-left .explore-sub-title:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .second .explore-right img
+{
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 70px;
+}
+
+.after-login .right .last {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.after-login .right .last li 
+{
+    display: inline-block;
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #c5dbca;
+    color: black;
+}
+
+.after-login .right .last li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}

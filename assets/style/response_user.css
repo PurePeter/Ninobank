@@ -1,0 +1,340 @@
+@media (min-width: 46.5em) {
+
+    .full-screen-menu,
+    .icon-row {
+        display: none;
+    }
+
+    .after-login .find-use-case .find {
+        position: absolute;
+        left: 23px;
+        bottom: 34px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 46.1875em) {
+    .left {
+        display: none;
+    }
+
+    .fa-bars:before,
+    .fa-navicon:before {
+        content: "\f0c9";
+        padding: 10px;
+    }
+
+    .icon-hamburger {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .after-login .right .first .user {
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        margin-right: -350px;
+    }
+
+    .after-login .right .first {
+        left: 0px;
+        top: 0;
+        height: 180px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #1b4346;
+    }
+
+    .after-login .right .first .language {
+        display: flex;
+        align-items: center;
+        margin-top: -5px;
+        top: 0px;
+    }
+
+    .after-login .right .first .user {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: -340px;
+    }
+
+    .after-login .right .background img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .after-login .second .default-account .container-1 .num-detail {
+        margin-left: 27px;
+    }
+
+    .after-login .right .first .user .greeting {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .after-login .right .first .user .avt img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        margin-right: 6px;
+        border-radius: 50px;
+    }
+
+    .after-login .right .first {
+        left: 0px;
+        top: 0;
+        height: 175px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #1b4346;
+    }
+
+    .after-login .second .default-account {
+        width: 360px;
+        height: 250px;
+        padding-top: 1px;
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+
+    .after-login .second .one {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .after-login .right .second {
+        top: 175px;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .after-login .second .default-account .container-1 .infor {
+        margin-bottom: 15px;
+        margin-top: -2px;
+    }
+
+    .after-login .second .default-account .history .temp {
+        right: -17px;
+        top: -2px;
+    }
+
+    .after-login .second .default-account .container-1 {
+        width: 92%;
+        height: 178px;
+        margin: 15px 15px 6px 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 6px;
+        margin-left: 15px;
+    }
+
+    .after-login .second .default-account .container-2 {
+        display: flex;
+        padding: 10px 0;
+        margin: 3px 15px 0;
+        width: 333px;
+        border-radius: 10px;
+    }
+
+    .after-login .second .favourite {
+        width: 99%;
+        height: 250px;
+        margin-top: 15px;
+    }
+
+    .after-login .second .favourite-left {
+        min-width: 330px;
+        margin-left: 5px;
+        margin-right: -15px;
+    }
+
+    .after-login .second .two {
+        display: block;
+        justify-content: space-evenly;
+        margin: 0px 50px;
+    }
+
+    .after-login .right .last {
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        top: 750px;
+        background-color: #558184;
+        height: 150px;
+    }
+
+    .after-login .second .favourite-body {
+        height: 205px;
+    }
+
+    .after-login .second .reward {
+        height: 220px;
+        width: 260px;
+        background-color: white;
+        margin: 20px 0px 0 0px;
+    }
+
+    .after-login .second .visa {
+        height: 220px;
+        width: 350px;
+        margin: 20px 0px 0 -40px;
+    }
+
+    .after-login .second .visa-more {
+        padding: 10px 20px;
+        width: 190px;
+        margin-left: 20px;
+        margin-top: -5px;
+        margin-bottom: 0px;
+    }
+
+    .visa-logo {
+        margin-left: 30px;
+        margin-top: -10px;
+    }
+
+    .after-login .second .explore {
+        height: 220px;
+        width: 350px;
+        margin: 20px 10px 0 -40px;
+        color: black;
+    }
+
+    .after-login .second .explore-right img {
+        margin-top: 66px;
+    }
+
+    .after-login .second .explore-right img {
+        margin-top: 0px;
+    }
+
+    .after-login .second .explore-left {
+        width: 300px;
+    }
+
+    .after-login .second .explore-left .explore-sub-title {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .after-login .second .explore-left .explore-title {
+        font-size: 14px;
+        margin: 30px 20px 45px;
+    }
+
+    .after-login .right .last li {
+        display: flex;
+        padding: 8px 10px;
+        border: 1px solid #558184;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: #558184;
+        color: white;
+        justify-content: center;
+    }
+
+    /* Định dạng cho menu toàn màn hình */
+    .full-screen-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom right, #c7e1af, #a4cbdc);
+        z-index: 1000;
+        transform: translateX(-100%);
+        /* Ẩn menu ở bên trái */
+        transition: transform 0.5s ease;
+        /* Hiệu ứng trượt ngang */
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    /* Khi menu hiện */
+    .full-screen-menu.show {
+        transform: translateX(0);
+        background-image: linear-gradient(to bottom right, #c7e1af, #a4cbdc);
+        /* Trượt menu vào từ bên trái */
+    }
+
+    /* Header của menu */
+    .menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1em;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    /* Close icon CSS */
+    .close-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Nội dung của menu */
+    .menu-content {
+        padding-top: 60px;
+        /* Để không trùng với icon X */
+    }
+
+    .menu-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu-content li {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .after-login .mid {
+        width: 100%;
+        height: 45  0px;
+        overflow: scroll;
+        scrollbar-width: none;
+        border-bottom: 1px solid black;
+        font-size: 14px;
+        /* background-color: #fff; */
+    }
+
+    .after-login .find-use-case input {
+        padding: 10px 30px 10px 50px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .fa-magnifying-glass:before, .fa-search:before {
+        content: "\f002";
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .after-login .find-use-case {
+        padding: 10px 10px 22px 10px;
+    }
+
+    .full-screen-menu.show {
+        transform: translateX(0);
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom right, #c7e1af, #a4cbdc);
+    }
+
+    .addition span{
+        display: none;
+    }
+}

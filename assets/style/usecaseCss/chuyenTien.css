@@ -1,0 +1,563 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all
+{
+    width: 100%;
+    /* height: 4000px;  */
+}
+
+.desperate
+{
+    background-color: black;
+    height: 100px;
+}
+
+/* AFTER LOGIN */
+.after-login
+{
+    background-color: #558184;
+    height: 750px;
+    display: flex;
+}  
+
+.nino 
+{
+    color: red;
+}
+
+.bank 
+{
+    color:rgb(35, 122, 180)
+}
+
+.after-login .header
+{
+    border-bottom: 1px solid black;
+    /* background-color: #326789; */
+}
+
+.after-login .left
+{
+    width: 300px;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, #d3ddc9, #a4d7cf);
+}
+
+.after-login .bank-name
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.after-login .find-use-case
+{
+    padding: 10px 10px 25px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.after-login .find-use-case input
+{
+    padding: 8px 50px 8px 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.after-login .find-use-case .find 
+{
+    position: absolute;
+    left: 30px;
+    bottom: 34px;
+    font-size: 14px;
+}
+
+.after-login .mid
+{
+    width: 100%;
+    height: 480px;
+    overflow: scroll;
+    scrollbar-width: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    background-color: #c5dbca;
+
+}
+
+.after-login .mid li 
+{
+    list-style: none;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 30px;
+    border-radius: 8px;
+    /* background-color: #78a6c8; */
+}
+
+.after-login .mid li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+ .icon 
+{
+    color:#6d9c9f;
+    margin-right: 5px;
+}
+
+.after-login .footer li 
+{
+    margin: 10px 30px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.after-login .footer li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}
+
+.after-login .right
+{
+    position: relative;
+}
+
+.after-login .right .first 
+{
+    width: 100%; 
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.after-login .right .background 
+{
+    position: relative;
+}
+
+.after-login .right .background img 
+{
+    width: 1240px;
+    height: 750px;
+    object-fit: cover; 
+    display: block; 
+}
+
+.after-login .right .first, 
+.after-login .right .second, 
+.after-login .right .last {
+    position: absolute;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    z-index: 1; 
+}
+
+.after-login .right .first {
+    left: 0; 
+    top: 0;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    color:#1b4346
+}
+
+.after-login .right .first .user .avt img
+{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;   
+    border: 1px solid black; 
+    background-color: rgb(176, 208, 229);
+    margin-right: 6px;
+    border-radius: 50px;
+}
+
+.after-login .right .first .language img
+{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;   
+    border: none;
+}
+
+.after-login .right .first .user 
+{
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.after-login .right .first .user .greeting
+{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.after-login .right .first .user .fullname
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.after-login .right .first .addition
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    height: 40px;
+}
+
+.after-login .right .first .addition .setting,
+.after-login .right .first .addition .language,
+.after-login .right .first .addition .log-out
+{
+    padding: 10px 10px;
+}
+
+.after-login .right .first .addition .setting:hover,
+.after-login .right .first .addition .language:hover,
+.after-login .right .first .addition .log-out:hover
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.after-login .right .first .addition img 
+{
+    width: 40px;
+}
+
+.after-login .right .first .language
+{
+    display: flex;
+    align-items: center;
+}
+
+.after-login .right .first .language-icon
+{
+    margin-top: 0px;
+    padding-right: 5px;
+}
+
+/*  */
+.after-login .right .second {
+    top: 180px; 
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.payment
+{
+    background-color: rgba(41, 59, 65, 0.2);
+    color: black;
+    height: 655px;
+    width: 740px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5),
+                0 -1px 2px rgba(255, 255, 255, 0.5),
+                1px 0 2px rgba(255, 255, 255, 0.5),
+                -1px 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.payment-head .name 
+{
+    padding-bottom: 10px;
+}
+
+.payment-head .road
+{
+    padding-bottom: 15px;
+}
+
+.payment li
+{
+    display: inline-block;
+    list-style: none;
+    font-size: 12px;
+    word-spacing: -2px;
+}
+
+.payment li:hover 
+{
+    color: #dee9ea;
+    cursor: pointer;
+}
+
+.payment-icon
+{
+    font-size: 10px;
+    padding-left: 2px;
+}
+
+.payment-account
+{
+    border: 1px solid black;
+    background-color: rgb(233, 230, 213);
+    border-radius: 10px;
+}
+
+.payment-account .down
+{
+    padding-left: 250px;
+}
+
+.payment-account .ceil
+{
+    display: flex;
+    font-size: 14px;
+    padding: 12px 0 10px 20px;
+    align-items: center;
+}
+
+.payment-account .source-acc
+{
+    margin-right: 150px;
+    color: #7a7777;
+}
+
+.payment-account .number-acc
+{
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.payment-account .number-acc:hover 
+{
+    background-color: #345254;
+    cursor: pointer;
+    color: white
+}
+
+.payment-account .floor
+{
+    font-size: 14px;
+    display: flex;
+    padding: 6px 35px 18px 20px;
+    justify-content: space-between;
+}
+
+.payment-account .floor .vnd 
+{
+    font-size: 12px;
+    color: #656565;
+}
+
+.payment-account .mod 
+{
+    color: #7a7777;
+}
+
+.payment-body .receiver-head
+{
+    padding: 30px 0 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.payment-body .receiver-body
+{
+    background-color: rgb(233, 230, 213);
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.payment-body .receiver-body1
+{
+    display: flex;
+    align-items: center;
+    padding: 12px 0 10px 20px;
+}
+
+.payment-body .receiver-body1 .receiver-bank
+{
+    margin-right: 150px;
+    color: #7a7777;
+}
+
+.payment-body .receiver-body1 .receiver-bank-select select
+{
+    background-color: white;
+    padding: 10px 215px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #2c2b2b;
+}
+
+.payment-body .receiver-body1 .receiver-bank-select .receiver-down
+{
+    padding-left: 185px;
+}
+
+.payment-body .receiver-body2
+{
+    display: flex;
+    padding: 6px 25px 18px 20px;
+    align-items: center;
+
+}
+
+.payment-body .receiver-body2 .receiver-acc
+{
+    margin-right: 125px;
+    color: #7a7777;
+}
+
+.payment-body .receiver-body2 .receiver-number
+{
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #2c2b2b;
+}
+
+.payment-body .receiver-body2 .receiver-number .receiver-book
+{
+    padding-left: 40px;
+}
+
+.payment-body .trade-head
+{
+    padding: 30px 0 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.payment-body .trade-body
+{
+    background-color: rgb(233, 230, 213);
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.payment-body .trade-body1
+{
+    display: flex;
+    align-items: center;
+    padding: 12px 0 10px 20px;
+}
+
+.payment-body .trade-body1 .trade-bank
+{
+    margin-right: 215px;
+    color: #7a7777;
+}
+
+.payment-body .trade-body1 .trade-bank-select
+{
+    background-color: white;
+    padding: 10px 280px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #2c2b2b;
+}
+
+.payment-body .trade-body1 .trade-bank-select .trade-down
+{
+    padding-left: 185px;
+}
+
+.payment-body .trade-body2
+{
+    display: flex;
+    padding: 6px 25px 18px 20px;
+    align-items: center;
+}
+
+.payment-body .trade-body2 .trade-acc
+{
+    margin-right: 202px;
+    color: #7a7777;
+}
+
+.payment-body .trade-body2 .trade-number
+{
+    background-color: white;
+    padding: 10px 215px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #2c2b2b;
+}
+
+.payment-body .trade-body2 .trade-number .trade-book
+{
+    padding-left: 40px;
+}
+
+.payment-continue
+{
+    background-color: #0e757c;
+    width: 180px;
+    margin: auto;
+    color: white;
+    align-self: center;
+    margin-top: 15px;
+    padding: 10px 0px 10px 60px;
+    border-radius: 10px;
+}
+
+.payment-continue:hover 
+{
+    background-color: #479fa5;
+    cursor: pointer;
+}
+
+/*  */
+
+.after-login .right .last {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.after-login .right .last li 
+{
+    display: inline-block;
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #c5dbca;
+    color: black;
+}
+
+.after-login .right .last li:hover 
+{
+    background-color: #1b4346;
+    cursor: pointer;
+    color: white;
+}

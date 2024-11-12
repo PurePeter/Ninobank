@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinoBank</title>
+    <link rel="icon" href="/assets/logo/logo-Photoroom.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/style/usecase/motietkiem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/style/usecase/motietkiem.css">
+</head>
+<body>
+    <div class="all">
+        <div class="after-login">
+            <div class="left">
+                <div class="header">
+                    <div class="bank-name">
+                        <a class="nino">Nino</a>  <a class="bank">Bank</a>
+                    </div>
+                    <div class="find-use-case">
+                        <form action="">
+                            <span><i class="find fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Tìm kiếm chức năng...">
+                        </form>
+                    </div>
+                </div>
+                <div class="mid">
+                    <ul>
+                        <li onclick="location.href='/user.html'">
+                            <i class="icon fa-solid fa-house"></i>
+                            Trang chủ
+                        </li>
+                        <li onclick="location.href='/usecase/chuyenTien.html'">
+                            <i class="icon fa-solid fa-money-bill-transfer"></i>
+                            Chuyển tiền
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-cart-shopping"></i>
+                            Hóa đơn
+                        </li>
+                        <li onclick="location.href='/usecase/vemaybay.html'">
+                            <i class="icon fa-solid fa-money-bill"></i>
+                            Đặt vé máy bay
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-money-check-dollar"></i>
+                            Dịch vụ thẻ
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-credit-card"></i>
+                            Tín dụng
+                        </li>
+                        <li onclick="location.href='/usecase/motietkiem.html'">
+                            <i class="icon fa-solid fa-piggy-bank"></i>
+                            Tiết kiệm
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-injured"></i>
+                            Bảo hiểm
+                        </li>
+                        <li>
+                            <i class="icon fa-regular fa-handshake"></i>
+                            Đầu tư
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-landmark"></i>    
+                            Ngân sách nhà nước
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <ul>
+                        <li>
+                            <i class="icon fa-solid fa-phone"></i>
+                            1900 xxx xxx
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-location-dot"></i>
+                            ATM/Chi nhánh
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-user-tie"></i>
+                            Yêu cầu hỗ trợ
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="background">
+                    <img src="/assets/img/lerone-pieters-vF6mSAWAzzU-unsplash.jpg" alt="">
+                    <div class="first">
+                        <div class="user">
+                            <div class="avt">
+                                <img class="avt-nino" src="/assets/img/Ninobackground.png" alt="">
+                            </div>
+                            <div class="another">
+                                <div class="greeting">
+                                    Chúc Quý khách một ngày tốt lành!
+                                </div>
+                                <div class="fullname">
+                                    <span id="usernameDisplay">Unknown</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addition">
+                            <div class="setting" onclick="location.href='/usecase/notifycation.html'">
+                                <i class="fa-solid fa-bell"></i>
+                                Thông báo
+                            </div>
+                            <div class="setting" onclick="location.href='/usecase/setting.html'">
+                                <i class="fa-solid fa-gear"></i>
+                                Cài đặt
+                            </div>
+                            <div class="language">
+                                <img class="language-icon" src=" https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="">
+                                Tiếng Việt
+                            </div>
+                            <div class="log-out" id="logoutButton" onclick="location.href='/index.html'">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Đăng xuất
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="save-money">
+                            <div class="save-money-head">
+                                <h3 class="name">Mở tiết kiệm</h3>
+                                <ul class="road">
+                                    <li>Trang chủ <i class="save-money-icon fa-solid fa-angle-right"></i></li>
+                                    <li>Tiết kiệm<i class="save-money-icon fa-solid fa-angle-right"></i></li>
+                                    <li>Mở tiết kiệm</li>
+                                </ul>
+                            </div>
+                            <div class="save-money-body">
+                                <div class="save-money-body-1"> 
+                                    <img class="save-img" src="/assets/img/Screenshot_2024-11-09_112735-removebg-preview.png" alt="" style="width: 200px; height: 200px; border-bottom-left-radius: 10px;">
+                                </div>
+                                <div class="save-money-body-2">
+                                    <div class="save-money-body-head">Tiền gửi có kỳ hạn trực tuyến</div>
+                                    <div class="save-money-body-subhead">Gửi tiền Online nhanh chóng, kỳ hạn gửi lên đến 24 tháng</div>
+                                    <div class="save-money-body-btn">Mở ngay</div>
+                                </div>
+                            </div>
+                            <div class="save-money-body">
+                                <div class="save-money-body-1"> 
+                                    <img class="save-img" src="/assets/img/Screenshot_2024-11-09_105600-removebg-preview.png" alt="" style="width: 200px; height: 200px; border-bottom-left-radius: 10px;">
+                                </div>
+                                <div class="save-money-body-2">
+                                    <div class="save-money-body-head">Tiền gửi rút gốc linh hoạt</div>
+                                    <div class="save-money-body-subhead">Rút tiền linh hoạt, tiếp tục hưởng lãi suất cho phần gốc còn lại được xác định tại đầu kỳ hạn</div>
+                                    <div class="save-money-body-btn">Mở ngay</div>
+                                </div>
+                            </div>
+                            <div class="save-money-body">
+                                <div class="save-money-body-1"> 
+                                    <img class="save-img" src="/assets/img/Screenshot_2024-11-09_110121-removebg-preview.png" alt="" style="width: 200px; height: 200px; border-bottom-left-radius: 10px;">
+                                </div>
+                                <div class="save-money-body-2">
+                                    <div class="save-money-body-head">Tiền gửi tích lũy trực tuyến</div>
+                                    <div class="save-money-body-subhead">Gửi thêm tiền định kỳ linh hoạt, dễ dàng đạt mục tiêu tài chính cá nhân</div>
+                                    <div class="save-money-body-btn">Mở ngay</div>
+                                </div>
+                            </div>
+                            <div class="save-money-body">
+                                <div class="save-money-body-1"> 
+                                    <img class="save-img" src="/assets/img/Screenshot_2024-11-09_105610-removebg-preview.png" alt="" style="width: 200px; height: 200px; border-bottom-left-radius: 10px;">
+                                </div>
+                                <div class="save-money-body-2">
+                                    <div class="save-money-body-head">Gửi tiền cho con</div>
+                                    <div class="save-money-body-subhead">Gửi tiền tích lũy cho con với số tiền, thời gian tích lũy mục tiêu xác định</div>
+                                    <div class="save-money-body-btn">Mở ngay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last">
+                        <ul>
+                            <li>Điều khoản sử dụng dịch vụ</li>
+                            <li>Biểu phí dịch vụ</li>
+                            <li>Hướng dẫn sử dụng dịch vụ</li>
+                            <li>Hướng dẫn giao dịch an toàn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/js/user.js"></script>
+</body>
+</html>

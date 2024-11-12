@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/style/register.css">
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js"></script>
+    <script type="module" src="/js/register.js" defer></script>
+    <link rel="stylesheet" href="./assets/style/response_register.css">
+    <title>NinoBank</title>
+    <link rel="icon" href="./assets/logo/logo-Photoroom.png" type="image/x-icon" />
+</head>
+<body>
+    <div class="page">
+        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="main">
+            <div class="left-register">
+                <div class="header-logo">
+                    <img src="/assets/img/logo-Photoroom.png" alt="" class="header_logo-icon">
+                    <p class="header_logo-content"><span class="content-1">NINO</span><span class="content-2">BANK</span></p>
+                </div>
+                <div class="form-container">
+                    <form id="signUpForm">
+                        <div class="form-container_group">
+                            <i class="fa-solid fa-phone input-icon"></i>
+                            <input type="text" class="form_input" id="signUpPhone" placeholder="Số điện thoại" required>
+                        </div>
+                        <div class="form-container_group">
+                            <i class="fa-solid fa-user input-icon"></i>
+                            <input type="text" class="form_input" id="signUpUsername" placeholder="Tên tài khoản" required>
+                        </div>   
+                        <div class="form-container_group">
+                            <i class="fa-solid fa-envelope input-icon"></i>
+                            <input type="email" class="form_input" id="signUpEmail" placeholder="Email" required>
+                        </div>
+                        <div class="form-container_group">
+                            <i class="fa-solid fa-key input-icon"></i>
+                            <input type="password" class="form_input" id="signUpPassword" placeholder="Mật khẩu" required>
+                            <i class="fa-solid fa-eye-slash toggle-password" id="togglePassword"></i>
+                        </div>
+                        <div class="form-container_group">
+                            <i class="fa-solid fa-key input-icon"></i>
+                            <input type="password" class="form_input" id="confirmPassword" placeholder="Xác nhận lại mật khẩu" required>
+                            <i class="fa-solid fa-eye-slash toggle-password" id="togglePassword"></i>
+                        </div>
+                        <button type="submit" class="control_sign-in" id="Button_Login">ĐĂNG KÝ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="right-img">
+                <div class="img-solution">
+                    <img src="/assets/img/logo-Photoroom.png" alt="" class="logo-bank">
+                    <p class="name-bank"><span class="content-1">NINO</span><span class="content-2">BANK</span></p>
+                    <p class="slogan">Tích cực pay tiền - Vận may sẽ đến</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="footer_bar">
+            <li class="bar-funtion"><i class="fa-solid fa-book"></i><p>Điều khoản sử dụng dịch vụ</p></li>
+            <li class="bar-funtion"><i class="fa-solid fa-clipboard-question"></i><p>Biểu phí dịch vụ</p></li>
+            <li class="bar-funtion"><i class="fa-solid fa-book-open"></i><p>Hướng dẫn sử dụng dịch vụ</p></li>
+            <li class="bar-funtion"><i class="fa-regular fa-credit-card"></i><p>Hướng dẫn giao dịch an toàn</p></li>
+            <li class="bar-funtion"><i class="fa-regular fa-circle-question"></i><p>Câu hỏi thường gặp</p></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+@media (max-width: 46.1875em) {
+
+    /* General adjustments */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        display: block;
+        width: 100%;
+        height: 740px;
+    }
+
+    /* Main container adjustments */
+    .main {
+        display: block;
+        width: 95%;
+        padding: 10px;
+        height: 700px;
+    }
+
+    /* Left image section adjustments */
+    .left-img {
+        display: none;
+        /* Hide the left side image on smaller screens */
+    }
+
+    /* Right login section (main form) */
+    .right-login {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .header-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 100px;
+    }
+
+    .header_logo-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .header_logo-content {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form-container_group {
+        margin-bottom: 15px;
+        position: relative;
+        padding: 3px 0px;
+    }
+
+    .form_input {
+        width: 100%;
+        font-size: 16px;
+        left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 38px;
+    }
+
+    .input-icon {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: #888;
+    }
+
+    /* Toggle password visibility icon */
+    .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: #888;
+    }
+
+    .form-aside {
+        text-align: left;
+        margin-top: 10px;
+        padding: 0 20px;
+    }
+
+    .aside_case a {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #33FFFF;
+    }
+
+    .aside_case a .icon-checkbox {
+        margin-right: 10px;
+    }
+
+    .form-control {
+        margin-top: 20px;
+    }
+
+    .control_sign-in {
+        width: 60%;
+        height: 80%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #399095;
+        color: black;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .control_sign-in:hover {
+        background-color: #0056b3;
+    }
+
+    .control_sign-in::before {
+        height: 2.5em;
+        transition: 1s ease;
+
+    }
+
+    /* Register section adjustments */
+    .register {
+        margin-top: 20px;
+    }
+
+    .register-para {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .register-control {
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        margin-top: -5px;
+    }
+
+    .footer_bar {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        position: sticky;
+        bottom: 10px;
+    }
+
+    .bar-funtion {
+        text-align: center;
+        max-width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 0px 6px;
+    }
+
+    .bar-funtion i {
+        font-size: 18px;
+        color: #fff;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .bar-funtion p {
+        font-size: 12px;
+        color: #fff;
+        margin: 0;
+        word-break: break-word;
+        white-space: normal;
+        line-height: 1;
+    }
+
+    .footer_bar .bar-funtion {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Thay đổi nội dung của các mục bằng ::before */
+    .footer_bar .bar-funtion:nth-child(1) p::before {
+        content: "Điều khoản dịch vụ";
+    }
+
+    .footer_bar .bar-funtion:nth-child(2) p::before {
+        content: "Biểu phí";
+    }
+
+    .footer_bar .bar-funtion:nth-child(3) p::before {
+        content: "Hướng dẫn sử dụng";
+    }
+
+    .footer_bar .bar-funtion:nth-child(4) p::before {
+        content: "Giao dịch";
+    }
+
+    .footer_bar .bar-funtion:nth-child(5) p::before {
+        content: "Hỗ trợ";
+    }
+
+    /* Ẩn nội dung văn bản gốc và hiển thị nội dung từ ::before */
+    .footer_bar .bar-funtion p {
+        visibility: hidden;
+    }
+
+    .footer_bar .bar-funtion p::before {
+        visibility: visible;
+        display: block;
+        text-align: center;
+    }
+
+    .message {
+        position: absolute;
+        z-index: 10;
+        top: 40px;
+        right: 45px;
+        width: 280px;
+        padding: 10px 15px;
+        border-radius: 30em;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 10px;
+        transition: opacity 0.3s;
+        opacity: 1;
+        text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+        text-align: center;
+        animation: myAnim 1s ease-in 0s 1 normal both;
+    }
+}

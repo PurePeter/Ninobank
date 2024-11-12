@@ -1,0 +1,126 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px){
+   
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+   
+}
+/* Mobile */
+@media (max-width: 739px){
+    /* Usecases same */
+    .body{
+        font-size: 14vw;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+    }
+    .first{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .after-login .right .first .user {
+        padding-left: 8px;
+    }
+    .addition div span{
+        display: none;
+    }
+    .addition .icon-bars{
+        display: block;
+        left: 5%;
+    }
+    .last ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 45px;
+    }
+    .after-login .right .last ul li{
+        color: #fff;
+        border: none;
+        background-color: transparent;
+    }
+
+    /* NOtifycation */
+    .notifycation{
+        width: 95%;
+    }
+    .header-navbar {
+        flex-wrap: wrap;
+    }
+      
+    .header_navbar-items {
+        width: 40%;
+        text-align: center;
+    }
+    .notifycation-search i {
+        width: 10%;
+    }
+    .items-time{
+        justify-content: space-between;
+    }
+    .items-time div:nth-child(3) {
+        margin-left: 0px;
+    }
+    /* Setting */
+    .settings{
+        width: 95%;
+    }
+    .notify-mid{
+        display: flex;
+    }
+    .notify div{
+        display: none;
+    }
+    .notify i, .notify p {
+        margin: 0 0px 0 0px;
+    }
+    .notify span{
+        font-size: 16px;
+    }
+    .notify .notify-mobile{
+        display: block;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .security-5 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* Phone-recharge */
+    .phone-recharge{
+        width: 95%;
+    }
+    .recharge_content div{
+        font-size: 15px;
+    }
+    .account_number{
+        display: flex;
+        justify-content: space-between;
+    }
+    .id_user div i {
+        margin-left: 0px;
+        font-size: 13px;
+    }
+    
+    .phone_money-name button{
+        width: 49%;
+    }
+    .phone_money-name button:nth-child(-n+3) {
+        margin-bottom: 10px;
+    }
+    .content_note::after {
+        display: none;
+    }
+    .content_control .back, 
+    .content_control .submit{
+        width: 40%;
+    }
+    .text_information{
+        margin-right: 0;
+    }
+}
