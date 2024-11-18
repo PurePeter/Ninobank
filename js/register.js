@@ -55,7 +55,7 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
         .then(() => {
             showMessage(messageDiv, "Đăng ký thành công!", "green");
             setTimeout(() => {
-                window.location.href = "/login.html"; // Chuyển đến trang đăng nhập
+                window.location.href = "./login.html"; // Chuyển đến trang đăng nhập
             }, 2100); 
         })
         .catch((error) => {
@@ -156,7 +156,7 @@ document.getElementById('signUpForm').addEventListener('submit', async (event) =
 
         showMessage(messageDiv, "Đăng ký thành công!", "green");
         setTimeout(() => {
-            window.location.href = "/login.html"; // Chuyển đến trang đăng nhập
+            window.location.href = "./login.html"; // Chuyển đến trang đăng nhập
         }, 2100); 
     } catch (error) {
         const errorMessage = error.message;
