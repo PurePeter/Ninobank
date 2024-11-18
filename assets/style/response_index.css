@@ -269,7 +269,11 @@
         padding-bottom: 30px;
         font-size: 14px;
         opacity: 1;
-        margin-left: 20px;
+        margin-left: 5px;
         text-align: center;
     }
+}
+
+.footer .icon-copyright {
+    margin: 2px 0px 0 0;
 }
