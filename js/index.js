@@ -12,7 +12,7 @@ function displayUsername() {
         document.getElementById("usernameDisplay").innerText = user.email; // Hoặc user.phone nếu bạn muốn hiển thị số điện thoại
     } else {
         // Nếu không có người dùng nào đăng nhập, chuyển đến trang đăng nhập
-        window.location.href = "/login.html";
+        window.location.href = "./login.html";
     }
 }
 
@@ -22,7 +22,7 @@ function setupLogoutButton() {
     logoutButton.addEventListener("click", () => {
         signOut(auth).then(() => {
             // Đăng xuất thành công, chuyển đến trang đăng nhập
-            window.location.href = "/index.html";
+            window.location.href = "./index.html";
         }).catch((error) => {
             // Xử lý lỗi đăng xuất
             console.error("Lỗi khi đăng xuất:", error.message);
