@@ -272,8 +272,8 @@
         margin-left: 5px;
         text-align: center;
     }
-}
 
-.footer .icon-copyright {
-    margin: 2px 0px 0 0;
+    .footer .icon-copyright {
+        margin: 2px 0px 0 0;
+    }
 }
