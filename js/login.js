@@ -53,6 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         signInUser(phone, email, password, messageDiv);
     });
+
+    // Thêm sự kiện nhấn Enter để thực hiện đăng nhập
+    document.addEventListener('keydown', (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            loginButton.click(); // Giả lập hành vi click nút đăng nhập
+        }
+    });
 });
 
 // Hàm đăng nhập người dùng với Firebase Authentication
