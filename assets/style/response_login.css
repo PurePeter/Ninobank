@@ -80,7 +80,7 @@
     .input-icon {
         position: absolute;
         top: 50%;
-        left: 5px;
+        left: 3px;
         transform: translateY(-50%);
         font-size: 18px;
         color: #888;
@@ -90,7 +90,7 @@
     .toggle-password {
         position: absolute;
         top: 50%;
-        right: 15px;
+        right: 3px;
         transform: translateY(-50%);
         font-size: 18px;
         color: #888;
