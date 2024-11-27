@@ -20,7 +20,7 @@ const db = getFirestore(app); // Khởi tạo Firestore
 // Hàm đăng ký
 document.getElementById('signUpForm').addEventListener('submit', async (event) => {
     event.preventDefault();
-    
+
     const username = document.getElementById('signUpUsername').value;
     const phone = document.getElementById('signUpPhone').value;
     const email = document.getElementById('signUpEmail').value;
@@ -50,21 +50,26 @@ document.getElementById('signUpForm').addEventListener('submit', async (event) =
     try {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
-        
+
         // Cập nhật username trong profile của người dùng
         await updateProfile(user, { displayName: username });
-        
+
         // Gọi hàm để thêm dữ liệu người dùng vào Firestore
         await addUserToFirestore(user.uid, username, phone, email, password); // Gửi password lên Firestore
 
         showMessage(messageDiv, "Đăng ký thành công!", "green");
         setTimeout(() => {
             window.location.href = "./login.html"; // Chuyển đến trang đăng nhập
-        }, 2100); 
+        }, 2100);
     } catch (error) {
         const errorMessage = error.message;
         showMessage(messageDiv, `Lỗi trong quá trình đăng ký: ${errorMessage}`, "red");
     }
+});
+
+// Lắng nghe sự kiện click cho nút "Quay lại"
+document.querySelector('.control_back').addEventListener('click', () => {
+    window.location.href = './login.html'; // Chuyển hướng về login.html
 });
 
 // Hàm thêm người dùng vào Firestore
@@ -86,15 +91,15 @@ async function addUserToFirestore(uid, username, phone, email, password) {
 function showMessage(element, message, color) {
     element.innerText = message;
     element.style.color = color;
-    element.style.display = "block"; 
+    element.style.display = "block";
     setTimeout(() => {
-        element.style.display = "none"; 
-    }, 4000); 
+        element.style.display = "none";
+    }, 4000);
 }
 
 // Hàm kiểm tra định dạng số điện thoại
 function isValidPhoneNumber(phone) {
-    return /^\d{10}$/.test(phone); 
+    return /^\d{10}$/.test(phone);
 }
 
 // Hàm kiểm tra định dạng email
@@ -113,4 +118,3 @@ document.querySelectorAll('.toggle-password').forEach(icon => {
         icon.classList.toggle('fa-eye');
     });
 });
-
