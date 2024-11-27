@@ -10,7 +10,7 @@ body {
   font-family: Helvetica,sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-image: url(./assets/img/background-4.png);
+  background-image: url("https://purepeter.github.io/ninobank/assets/img/background-4.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto cover;
   /* background-color: #ffc300; */
