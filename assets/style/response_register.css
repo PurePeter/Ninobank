@@ -77,7 +77,7 @@
     .input-icon {
         position: absolute;
         top: 50%;
-        left: 3px;
+        left: 2px;
         transform: translateY(-50%);
         font-size: 18px;
         color: #888;
@@ -116,7 +116,7 @@
     }
 
     .control_sign-in {
-        width: 50%;
+        width: 100%;
         padding: 12px;
         font-size: 16px;
         background-color: #399095;
@@ -125,11 +125,10 @@
         border-radius: 20px;
         cursor: pointer;
         margin-top: 40px;
-        margin-left: 70px;
     }
 
     .control_sign-in:hover {
-        background-color: #0056b3;
+        background-color: #399095;
     }
 
     .control_sign-in::before {
@@ -138,6 +137,29 @@
 
     }
 
+    .control_back {
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        background-color: #399095;
+        color: #fff;
+        width: 200px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 55px;
+        border-radius: 30em;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+        cursor: pointer;
+    }
+    
     /* Register section adjustments */
     .register {
         margin-top: 20px;
