@@ -75,7 +75,7 @@
     .input-icon {
         position: absolute;
         top: 50%;
-        left: 3px;
+        left: 1px;
         transform: translateY(-50%);
         font-size: 18px;
         color: #888;
@@ -118,7 +118,7 @@
         padding: 10px;
         font-size: 16px;
         background-color: #399095;
-        color: black;
+        color: #fff;
         border: none;
         border-radius: 20px;
         cursor: pointer;
@@ -126,8 +126,27 @@
         margin-bottom: 10px;
     }
 
+    .control_back {
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        background-color: #399095;
+        color: #fff;
+        width: 200px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 0px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .control_back::before {
+        height: 3rem;
+    }
+
     .control_sign-in:hover {
-        background-color: #0056b3;
+        background-color: #399095;
     }
 
     .control_sign-in::before {
@@ -242,8 +261,8 @@
     .message {
         position: absolute;
         z-index: 10;
-        top: 40px;
-        right: 45px;
+        top: 35px;
+        right: 27px;
         width: 280px;
         padding: 10px 15px;
         border-radius: 30em;
