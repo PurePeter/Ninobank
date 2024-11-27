@@ -63,6 +63,11 @@ document.getElementById('submitBtn').addEventListener('click', async () => {
     }
 });
 
+// Lắng nghe sự kiện click cho nút "Quay lại"
+document.querySelector('.control_back').addEventListener('click', () => {
+    window.location.href = './login.html'; // Chuyển hướng về login.html
+});
+
 // Hàm hiển thị thông báo
 function showMessage(element, message, color) {
     element.innerText = message;
