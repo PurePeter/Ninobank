@@ -159,6 +159,10 @@
         /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
         cursor: pointer;
     }
+
+    .control_back::before {
+        height: 2.5em;
+    }
     
     /* Register section adjustments */
     .register {
