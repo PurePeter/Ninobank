@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const messageDiv = document.getElementById("signInpMessage");
     const togglePassword = document.getElementById("togglePassword");
     const passwordInput = document.getElementById("signInPassword");
-    const form = document.querySelector("form"); // Gắn sự kiện vào toàn bộ form
 
     togglePassword.addEventListener('click', () => {
         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -33,42 +32,37 @@ document.addEventListener("DOMContentLoaded", () => {
         togglePassword.classList.toggle('fa-eye-slash');
     });
 
-    // Xử lý khi nhấn nút đăng nhập
     loginButton.addEventListener('click', (event) => {
         event.preventDefault();
-        handleLogin(messageDiv); // Hàm xử lý đăng nhập
+
+        const phone = document.getElementById('signInPhone').value.trim();
+        const email = document.getElementById('signInEmail').value.trim();
+        const password = document.getElementById('signInPassword').value.trim();
+
+        // Kiểm tra trạng thái khóa tài khoản
+        const isLocked = checkIfLocked(email);
+        if (isLocked) {
+            showMessage(messageDiv, "Tài khoản của bạn đang bị khóa. Vui lòng thử lại sau.", "red");
+            return;
+        }
+
+        if (!phone || !email || !password) {
+            showMessage(messageDiv, 'Vui lòng nhập đủ thông tin.', 'red');
+            return;
+        }
+
+        // Bắt đầu quá trình đăng nhập
+        signInUser(phone, email, password, messageDiv);
     });
 
-    // Xử lý khi nhấn Enter
-    form.addEventListener("keydown", (event) => {
+    // Thêm sự kiện nhấn Enter để thực hiện đăng nhập
+    document.addEventListener('keydown', (event) => {
         if (event.key === "Enter") {
             event.preventDefault();
-            handleLogin(messageDiv); // Gọi hàm đăng nhập khi nhấn Enter
+            loginButton.click(); // Giả lập hành vi click nút đăng nhập
         }
     });
 });
-
-// Tách hàm xử lý đăng nhập riêng
-function handleLogin(messageDiv) {
-    const phone = document.getElementById('signInPhone').value.trim();
-    const email = document.getElementById('signInEmail').value.trim();
-    const password = document.getElementById('signInPassword').value.trim();
-
-    // Kiểm tra trạng thái khóa tài khoản
-    const isLocked = checkIfLocked(email);
-    if (isLocked) {
-        showMessage(messageDiv, "Tài khoản của bạn đang bị khóa. Vui lòng thử lại sau.", "red");
-        return;
-    }
-
-    if (!phone || !email || !password) {
-        showMessage(messageDiv, 'Vui lòng nhập đủ thông tin.', 'red');
-        return;
-    }
-
-    // Gọi hàm đăng nhập người dùng
-    signInUser(phone, email, password, messageDiv);
-}
 
 function signInUser(phone, email, password, messageDiv) {
     if (!isValidPhoneNumber(phone)) {
