@@ -77,7 +77,7 @@ function signInUser(phone, email, password, messageDiv) {
         resetLoginAttempts(email);
         showMessage(messageDiv, "Đăng nhập thành công!", "green");
         setTimeout(() => {
-            window.location.href = "/user.html";
+            window.location.href = "./user.html";
         }, 2000);
     })
     .catch((error) => {
