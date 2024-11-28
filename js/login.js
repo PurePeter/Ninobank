@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const messageDiv = document.getElementById("signInpMessage");
     const togglePassword = document.getElementById("togglePassword");
     const passwordInput = document.getElementById("signInPassword");
+    const form = document.querySelector("form"); // Gắn sự kiện vào toàn bộ form
 
     togglePassword.addEventListener('click', () => {
         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -32,29 +33,42 @@ document.addEventListener("DOMContentLoaded", () => {
         togglePassword.classList.toggle('fa-eye-slash');
     });
 
+    // Xử lý khi nhấn nút đăng nhập
     loginButton.addEventListener('click', (event) => {
         event.preventDefault();
+        handleLogin(messageDiv); // Hàm xử lý đăng nhập
+    });
 
-        const phone = document.getElementById('signInPhone').value.trim();
-        const email = document.getElementById('signInEmail').value.trim();
-        const password = document.getElementById('signInPassword').value.trim();
-
-        // Kiểm tra trạng thái khóa tài khoản
-        const isLocked = checkIfLocked(email);
-        if (isLocked) {
-            showMessage(messageDiv, "Tài khoản của bạn đang bị khóa. Vui lòng thử lại sau.", "red");
-            return;
+    // Xử lý khi nhấn Enter
+    form.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            handleLogin(messageDiv); // Gọi hàm đăng nhập khi nhấn Enter
         }
-
-        if (!phone || !email || !password) {
-            showMessage(messageDiv, 'Vui lòng nhập đủ thông tin.', 'red');
-            return;
-        }
-
-        // Bắt đầu quá trình đăng nhập
-        signInUser(phone, email, password, messageDiv);
     });
 });
+
+// Tách hàm xử lý đăng nhập riêng
+function handleLogin(messageDiv) {
+    const phone = document.getElementById('signInPhone').value.trim();
+    const email = document.getElementById('signInEmail').value.trim();
+    const password = document.getElementById('signInPassword').value.trim();
+
+    // Kiểm tra trạng thái khóa tài khoản
+    const isLocked = checkIfLocked(email);
+    if (isLocked) {
+        showMessage(messageDiv, "Tài khoản của bạn đang bị khóa. Vui lòng thử lại sau.", "red");
+        return;
+    }
+
+    if (!phone || !email || !password) {
+        showMessage(messageDiv, 'Vui lòng nhập đủ thông tin.', 'red');
+        return;
+    }
+
+    // Gọi hàm đăng nhập người dùng
+    signInUser(phone, email, password, messageDiv);
+}
 
 function signInUser(phone, email, password, messageDiv) {
     if (!isValidPhoneNumber(phone)) {
@@ -77,7 +91,7 @@ function signInUser(phone, email, password, messageDiv) {
         resetLoginAttempts(email);
         showMessage(messageDiv, "Đăng nhập thành công!", "green");
         setTimeout(() => {
-            window.location.href = "./user.html";
+            window.location.href = "/user.html";
         }, 2000);
     })
     .catch((error) => {
