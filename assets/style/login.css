@@ -11,7 +11,7 @@ body {
   color: #001858;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.5; 
   background-image: url("https://purepeter.github.io/ninobank/assets/img/background-4.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto cover;
@@ -84,7 +84,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 70px 0 25px 0;
+  margin: 50px 0 25px 0;
 }
 
 .logo-bank {
@@ -123,7 +123,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 55px;
+  margin-top: 35px;
 }
 
 .form-container_group {
